@@ -100,22 +100,8 @@
             margin: 1rem 0;
         }
     </style>
-    
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
-        
-        // تتبع قراءة الفصل
-        gtag('event', 'chapter_read', {
-            'chapter_number': '6',
-            'chapter_part': '2',
-            'chapter_title': 'الوسطاء وطرق التداول'
-        });
-    </script>
+    <script src="js/analytics.js"></script>
 </head>
 <body>
     <div class="container">
@@ -253,8 +239,5 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Google Analytics -->
-    <script src="js/analytics.js"></script>
 </body>
 </html> 

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفصل السابع: أوامر البيع والشراء - الجزء الثاني | المال والاستثمار في الأسواق المالية</title>
+    <meta name="description" content="تعرف على البيع المسبق، أوامر التغطية، الأوامر المتقدمة، والأمثلة العملية لاستخدام أوامر البيع والشراء.">
+    <meta name="keywords" content="البيع المسبق, أوامر التغطية, الأوامر المتقدمة, أمثلة عملية, التداول في الأسهم, الأسواق المالية, فهد الحويماني">
+    <meta name="author" content="فهد الحويماني">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://zajwal.com/chapter7_part2.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://zajwal.com/chapter7_part2.html">
+    <meta property="og:title" content="الفصل السابع: أوامر البيع والشراء - الجزء الثاني">
+    <meta property="og:description" content="تعرف على البيع المسبق، أوامر التغطية، الأوامر المتقدمة، والأمثلة العملية لاستخدام أوامر البيع والشراء.">
+    <meta property="og:image" content="https://zajwal.com/images/book-cover.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://zajwal.com/chapter7_part2.html">
+    <meta property="twitter:title" content="الفصل السابع: أوامر البيع والشراء - الجزء الثاني">
+    <meta property="twitter:description" content="تعرف على البيع المسبق، أوامر التغطية، الأوامر المتقدمة، والأمثلة العملية لاستخدام أوامر البيع والشراء.">
+    <meta property="twitter:image" content="https://zajwal.com/images/book-cover.jpg">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            background-color: #f8f9fa;
+        }
+        .chapter-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 2rem 0;
+        }
+        .chapter-title {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        .section-title {
+            color: #34495e;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        .navigation-buttons {
+            margin: 2rem 0;
+        }
+        .btn-navigation {
+            margin: 0.5rem;
+            min-width: 120px;
+        }
+        .table-of-contents {
+            background: #ecf0f1;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        .toc-item {
+            margin: 0.5rem 0;
+        }
+        .toc-item a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+        .toc-item a:hover {
+            color: #3498db;
+        }
+        .highlight {
+            background-color: #fff3cd;
+            padding: 1rem;
+            border-left: 4px solid #ffc107;
+            margin: 1rem 0;
+        }
+        .important-note {
+            background-color: #d1ecf1;
+            padding: 1rem;
+            border-left: 4px solid #17a2b8;
+            margin: 1rem 0;
+        }
+        .warning-note {
+            background-color: #f8d7da;
+            padding: 1rem;
+            border-left: 4px solid #dc3545;
+            margin: 1rem 0;
+        }
+        .example-box {
+            background-color: #e8f5e8;
+            padding: 1rem;
+            border-left: 4px solid #28a745;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        .footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #5dade2;
+        }
+    </style>
+    <!-- Google Analytics -->
+    <script src="js/analytics.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="chapter-content">
+            <h1 class="chapter-title">الفصل السابع: أوامر البيع والشراء - الجزء الثاني</h1>
+            
+            <div class="table-of-contents">
+                <h4>محتويات هذا الجزء:</h4>
+                <div class="toc-item"><a href="#short-selling">البيع المسبق</a></div>
+                <div class="toc-item"><a href="#covering-orders">أوامر التغطية</a></div>
+                <div class="toc-item"><a href="#advanced-orders">أوامر أخرى متقدمة</a></div>
+                <div class="toc-item"><a href="#practical-examples">أمثلة عملية</a></div>
+                <div class="toc-item"><a href="#loss-limitation">الحد من الخسارة</a></div>
+                <div class="toc-item"><a href="#ipo-trading">التداول في اليوم الأول للطرح</a></div>
+                <div class="toc-item"><a href="#conclusion">الخلاصة</a></div>
+            </div>
+
+            <section id="short-selling">
+                <h3 class="section-title">البيع المسبق (Short Selling)</h3>
+                <p>هو أمر بيع لعدد معين من الأسهم بسعر السوق أو بسعر محدد أو بسعر موقوف، ويتم كما ذكرنا في شرح حساب البيع المُسبق بقيام الوسيط باقتراض أسهم شخص آخر وإعارتها للبائع حتى وقت لاحق.</p>
+
+                <div class="example-box">
+                    <strong>أمثلة على البيع المسبق:</strong>
+                    <ul>
+                        <li>بيع 1000 سهم بسعر السوق</li>
+                        <li>بيع 1000 سهم بسعر محدد لا يقل عن 50 دولاراً</li>
+                        <li>بيع 1000 سهم بسعر موقوف 45 دولاراً</li>
+                    </ul>
+                </div>
+
+                <div class="important-note">
+                    <strong>كيفية عمل البيع المسبق:</strong>
+                    <p>معنى هذا الأمر أن المستثمر يود إدخال أمر بيع مُسبق لعدد ألف سهم بسعر لا يقل عن 50 دولاراً، وذلك عند وصول السعر الحالي للسهم لمبلغ 45 دولاراً. وكما نعلم يجب أن يكون السعر الحالي للسهم أعلى من 45 دولاراً عند إدخال الأمر.</p>
+                </div>
+
+                <div class="warning-note">
+                    <strong>متطلبات البيع المسبق:</strong>
+                    <ul>
+                        <li>يجب أن يكون لدى العميل في حسابه على الأقل 25,000 دولار (نصف القيمة) أو ما يعادلها من الأسهم</li>
+                        <li>عندما تتم عملية البيع فإن الشخص يحصل على مبلغ 50,000 دولار في حسابه</li>
+                        <li>متى ما أراد الخروج من هذه العملية فعليه أن يقوم بشراء الأسهم وإعادتها للوسيط</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="covering-orders">
+                <h3 class="section-title">أمر الشراء لتغطية البيع المسبق (Buy to Cover)</h3>
+                <p>تتم عملية الشراء لتغطية البيع المُسبق بإدخال أمر شراء لعدد معين من الأسهم بسعر السوق أو بسعر محدد أو بسعر موقوف للخروج من حالة البيع المُسبق. ولا ينفذ الأمر إلا إذا كانت هناك حالة بيع مُسبق فيما قبل.</p>
+
+                <div class="example-box">
+                    <strong>أمثلة على أوامر التغطية:</strong>
+                    <ul>
+                        <li>شراء 1000 سهم بسعر السوق</li>
+                        <li>شراء 1000 سهم بسعر محدد لا يزيد عن 45 دولاراً</li>
+                        <li>شراء 1000 سهم بسعر موقوف 50 دولاراً</li>
+                    </ul>
+                </div>
+
+                <div class="important-note">
+                    <strong>ملاحظة مهمة:</strong>
+                    <p>في الأمر الأخير لشراء التغطية بطريقة الشراء الموقوف يجب ألا يقل السعر المحدد عن السعر الموقوف، تماماً كما في أوامر الشراء الموقوف العادية.</p>
+                </div>
+            </section>
+
+            <section id="advanced-orders">
+                <h3 class="section-title">أوامر أخرى متقدمة</h3>
+                <p>هناك أنواع أخرى من أوامر البيع والشراء كانت حتى وقت قريب غير متوفرة للمستثمر الصغير، حيث كانت فقط تمارس من قبل كبار مديري الحسابات والمحترفين وغيرهم من المختصين.</p>
+
+                <h4>أمر "نفذ فوراً أو ألغ الأمر" (Fill or Kill - FOK)</h4>
+                <p>يزيل الأمر من قائمة الأوامر إن لم يتم تنفيذه، فلا يبقى مكشوفاً أمام بقية المتداولين. أي أن هذا الأمر يشبه الأمر بسعر السوق في سرعة التنفيذ، ولكنه يمكن أن يكون مشروطاً بسعر أو كمية.</p>
+
+                <div class="example-box">
+                    <strong>مثال:</strong> لو أراد شخص بيع 10 آلاف سهم بسعر 50 دولاراً، وكان سعر الطلب الحالي 50 دولاراً ولكن بكمية 1000 سهم فقط، فإن الذي يحصل هو أن يباع للشخص ألف سهم، أما التسعة آلاف سهم المتبقية فإنها تلغى ولا تظهر في قائمة الأوامر.
+                </div>
+
+                <h4>أمر "بسعر السوق إذا وصل السعر إلى حد معين" (Market If Touched - MIT)</h4>
+                <p>يأمر بإدخال أمر بسعر السوق إذا وصل السعر إلى حد معين، وهو عكس أمري الشراء والبيع الموقوف. بمعنى أنه في هذا الأمر يستطيع الشخص أن يشتري السهم بسعر السوق عندما ينخفض السعر الحالي إلى حد معين.</p>
+
+                <h4>أمر "بسعر السوق عند الإغلاق" (Market on Close - MOC)</h4>
+                <p>عن طريقه ينفذ الأمر بسعر السوق في الدقائق الأخيرة من التداول. وهو مفيد لمن يرغب شراء السهم أو بيعه حسب آخر سعر لذلك اليوم.</p>
+
+                <div class="warning-note">
+                    <strong>ملاحظة:</strong>
+                    <p>هذه الأوامر غالباً لا تتوفر عن طريق الإنترنت ولكن قد يقوم الوسيط بأخذها عن طريق الهاتف.</p>
+                </div>
+            </section>
+
+            <section id="practical-examples">
+                <h3 class="section-title">طرق الاستفادة من أوامر البيع والشراء</h3>
+                <p>بالرغم من أن أوامر البيع والشراء هذه تبدو بسيطة إلا أن الكثير يخفق في فهمها بشكل صحيح وبذلك لا يستفيد من مزايا كل طريقة بالشكل الذي يخدم أهدافه الاستثمارية.</p>
+
+                <h4>أمثلة على الأخطاء الشائعة:</h4>
+
+                <div class="example-box">
+                    <strong>مثال 1:</strong> إدخال طلب شراء 1000 سهم بسعر السوق وبخاصية الكل أو لاشيء.
+                    <p><strong>هل هذا صحيح؟</strong></p>
+                    <p><strong>الجواب:</strong> لا، لأن الأمر بسعر السوق يضمن شراء الكمية كاملة ولا يُسمح بذكر خاصية الكل أو لاشيء.</p>
+                </div>
+
+                <div class="example-box">
+                    <strong>مثال 2:</strong> إدخال طلب شراء بسعر محدد أعلى من السعر الحالي للسهم. أي كأن يكون الأمر لشراء 1000 سهم بسعر 55 دولاراً بينما السعر الحالي 50 دولاراً.
+                    <p><strong>هل هذا مقبول؟</strong></p>
+                    <p><strong>الجواب:</strong> نعم؛ ولكن يتم الشراء بسعر السوق بشرط ألا يتجاوز 55 دولاراً.</p>
+                </div>
+
+                <div class="example-box">
+                    <strong>مثال 3:</strong> إدخال طلب شراء لعدد 1000 سهم بطريقة الشراء الموقوف وبسعر أقل من سعر السوق. أي طلب شراء موقوف لعدد 1000 سهم بسعر 45 دولاراً موقوف بينما سعر السوق 50 دولاراً.
+                    <p><strong>هل هذا جائز؟</strong></p>
+                    <p><strong>الجواب:</strong> لا، لأن طلب الشراء الموقوف يجب أن يكون بسعر أعلى من سعر السوق الحالي.</p>
+                </div>
+
+                <div class="example-box">
+                    <strong>مثال 4:</strong> إدخال طلب بيع مُسبق لعدد 100 سهم بسعر 5 دولارات محدد.
+                    <p><strong>هل هذا جائز؟</strong></p>
+                    <p><strong>الجواب:</strong> لا، لأنه لا يسمح غالباً بإجراء البيع المُسبق للأسهم التي سعرها أقل من 5 دولارات!</p>
+                </div>
+            </section>
+
+            <section id="loss-limitation">
+                <h3 class="section-title">الحد من الخسارة</h3>
+                <p>دفعت مبلغ 10 آلاف دولار لشراء ألف سهم من شركة سعر سهمها عشرة دولارات (أي 10,000 دولار). وتود أن تحد من نسبة الخسارة بحيث لا تتجاوز أكثر من 10% من رأس المال المدفوع فكيف تتصرف؟</p>
+
+                <div class="warning-note">
+                    <strong>الجواب:</strong> من المستحيل على الشخص أن يضمن عدم خسارة أكثر من 10% (عدا عن طريق التعامل في عقود خيار الأسهم)، ولكن قد تستطيع أن تقلل من نسبة الخسارة وأن تضعها بحدود 10%.
+                </div>
+
+                <h4>المحاولة الأولى (خاطئة):</h4>
+                <div class="example-box">
+                    <strong>الأمر:</strong> بيع 1000 سهم بسعر 9 دولارات محدد، مع خاصية الكل أو لاشيء، وخاصية ساري المفعول حتى إشعار آخر.
+                    <p><strong>النتيجة:</strong> من الممكن أن تخسر أكثر من 10% بل ربما تخسر 100% من رأس المال!</p>
+                </div>
+
+                <h4>المحاولة الثانية (خاطئة):</h4>
+                <div class="example-box">
+                    <strong>الأمر:</strong> بيع 1000 سهم بسعر 9 دولارات موقوف محدد، وساري المفعول حتى إشعار آخر، ولكن بدون ذكر خاصية الكل أو لاشيء.
+                    <p><strong>النتيجة:</strong> قد تخسر أكثر بكثير من 10%.</p>
+                </div>
+
+                <h4>المحاولة الثالثة (أفضل):</h4>
+                <div class="example-box">
+                    <strong>الأمر:</strong> بيع 1000 سهم بسعر 9 دولارات موقوف، وساري المفعول حتى إشعار آخر، وبدون جعله محدداً.
+                    <p><strong>النتيجة:</strong> قد تخسر أقل أو أكثر بقليل من 10%.</p>
+                </div>
+
+                <div class="important-note">
+                    <strong>الخلاصة:</strong>
+                    <p>هل بالإمكان ضمان عدم خسارة أكثر من 10% بأي شكل آخر؟ نعم هناك طرق معينة لضمان عدم خسارة أكثر من نسبة معينة وهي طرق حديثة تتطلب استعمال عقود خيار الأسهم وغيرها من الطرق التي تحقق أهداف التحوط.</p>
+                </div>
+            </section>
+
+            <section id="ipo-trading">
+                <h3 class="section-title">شراء في اليوم الأول للطرح الأولي</h3>
+                <p>سمعت عن طرح أسهم شركة لها مستقبل باهر حسب تقديرك وحسب ما سمعته من الكثير من الناس والمحللين. ولم تستطع الحصول على سعر الطرح. فماذا تفعل صباح يوم الطرح؟</p>
+
+                <div class="warning-note">
+                    <strong>خطأ فادح يجب تجنبه:</strong>
+                    <p>إدخال أمر شراء بسعر السوق قبل بداية التداول عند الساعة 9:30 صباحاً، لاعتقادك بأن أمر الشراء بسعر السوق يتم تنفيذه بسرعة، وبذلك تحصل على نصيبك من الأسهم قبل أن يرتفع السعر بشكل عالٍ.</p>
+                </div>
+
+                <div class="important-note">
+                    <strong>لماذا هذا خطأ؟</strong>
+                    <p>هذا خطأ فادح يجب تجنبه؛ بغض النظر عن جودة الشركة وما تعتقد من نجاح باهر لها. بل إنه من الخطأ إدخال أمر شراء بسعر السوق قبل افتتاح السوق بغض النظر عمّا إذا كانت الشركة جديدة أم قديمة.</p>
+                </div>
+
+                <h4>ما الذي يحدث في الواقع؟</h4>
+                <p>عند إدخال هذا النوع من أوامر البيع والشراء بهذا الشكل فإن المستثمر في الواقع يقوم بتقديم أمواله هبة لصناع السوق في سوق نازداك، وبشكل أقل لأخصائيي سوق نيويورك والسوق الأمريكي!</p>
+
+                <div class="highlight">
+                    <strong>كيفية استغلال صناع السوق:</strong>
+                    <ul>
+                        <li>يقومون برفع سعر العرض (أي يعرضون أسهماً للبيع بسعر عالٍ) إلى حد مرتفع جداً</li>
+                        <li>يحدث هذا حالما يكتشفون من خلال أجهزتهم أو حسب ما يتوقعونه بسبب قرب وصول كمية كبيرة من أوامر الشراء بسعر السوق</li>
+                        <li>في منتصف عام 1999 أمرت محكمة في ولاية ألاباما أحد الوسطاء بدفع مبلغ 50 ألف دولار لأحد المستثمرين الذي قام بشراء 1000 سهم من أسهم شركة في اليوم الأول للطرح</li>
+                    </ul>
+                </div>
+
+                <h4>ما الذي يحدث في حالة الطرح الأولي؟</h4>
+                <p>إن الذي يحدث هو أن صناع السوق ممن لديهم عدد من الأسهم الجديدة، كبنك الاستثمار نفسه وشركاؤه من صناع السوق، يقومون برفع سعر العرض حسب حجم الإقبال المتوقع.</p>
+
+                <div class="important-note">
+                    <strong>لماذا يرفعون السعر؟</strong>
+                    <ul>
+                        <li>حيث إنهم الوحيدون الذين في حوزتهم عدد من الأسهم الجديدة، فمن صالحهم رفع سعر العرض إلى أعلى حد ممكن</li>
+                        <li>ولضرورة تقليص فارق السعر بين العرض والطلب فإنهم يقومون برفع سعر الطلب بلا خوف من التزامهم بشراء كميات كبيرة</li>
+                        <li>إن إمكانية اضطرارهم للشراء ضعيفة جداً؛ ذلك لأنهم تقريباً الوحيدون الذين يملكون الأسهم عند الافتتاح!</li>
+                    </ul>
+                </div>
+
+                <div class="warning-note">
+                    <strong>نصيحة مهمة:</strong>
+                    <p>لو أنه قدر لك أن تحصل على عدد من الأسهم بسعر الطرح والذي عادة لا يزيد عن مائة سهم في أفضل الحالات، سوف تلاحظ أن الوسيط الذي حصلت على الأسهم عن طريقه، والذي يعمل كصانع سوق في أغلب الأحوال، يحثك بشتى الطرق على ألاّ تبيع أسهمك في اليوم الأول. وذلك لكي لا تحد من قدرتهم على رفع السعر بشكل عالٍ.</p>
+                </div>
+
+                <div class="highlight">
+                    <strong>الخلاصة:</strong>
+                    <p>إن ما نذكره هنا من تجاوزات لصناع السوق ليس بشيء مخالف للقانون لسوء الحظ، وليس من نسج الخيال، فهذه الأمور وغيرها من الحقائق معروفة عند من لهم اطلاع بالسوق وكيفية عمله وما في بواطنه من أمور، وطبيعي ألا يكون لدى العاملين بالسوق الرغبة في تثقيف المستثمرين بهذه الأمور!</p>
+                </div>
+            </section>
+
+            <section id="conclusion">
+                <h3 class="section-title">الخلاصة</h3>
+                <p>إن من الضروري على المستثمر معرفة الآلية التي يتم بها تداول الأسهم لتجنب الوقوع في أبسط وأشهر الأخطاء التي يقع فيها المستثمرون الجدد.</p>
+
+                <div class="important-note">
+                    <strong>النقاط الرئيسية:</strong>
+                    <ul>
+                        <li>رأينا في هذا الفصل كيف أن عملية اختيار الأمر المناسب في الوقت المناسب لتحقيق هدف مناسب، ليست في غاية السهولة كما يبدو لبعض المستثمرين</li>
+                        <li>لا يكفي أن يعرف المستثمر بأن هناك نوعين من أوامر البيع والشراء، أمر محدد وأمر بسعر السوق</li>
+                        <li>أوامر البيع والشراء لها خصائص كثيرة وهناك طرق معينة تمكن المستثمر من الاستفادة منها بشكل جيد</li>
+                    </ul>
+                </div>
+
+                <div class="highlight">
+                    <strong>توصيات مهمة:</strong>
+                    <ul>
+                        <li>قليل من المستثمرين يتعامل مع الأوامر الموقوفة، والبعض يتعامل معها دون أن يدرك بشكل جيد كامل خصائصها وطرق استخدامها</li>
+                        <li>يجب أن يمارس هذا النوع من أوامر البيع والشراء من قبل كافة المستثمرين لما يقدمه أمر البيع الموقوف من حماية لرأس المال</li>
+                        <li>أمر الشراء الموقوف يقدم فرص الحصول على السهم في الوقت المناسب</li>
+                        <li>تحدثنا كذلك عن آلية البيع المُسبق وكيفية إدخال هذا الأمر عند البيع أولاً ومن ثم عند الشراء لتغطية ما تم بيعه مُسبقاً</li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="navigation-buttons text-center">
+                <a href="chapter7_part1.html" class="btn btn-outline-primary btn-navigation">← الجزء الأول</a>
+                <a href="index.html" class="btn btn-secondary btn-navigation">العودة للرئيسية</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>المال والاستثمار في الأسواق المالية</h5>
+                    <p>كتاب شامل عن الاستثمار في الأسواق المالية</p>
+                    <p>تأليف: فهد الحويماني</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">الصفحة الرئيسية</a></li>
+                        <li><a href="table_of_contents.html">فهرس المحتويات</a></li>
+                        <li><a href="preface.html">المقدمة</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2024 جميع الحقوق محفوظة. هذا الكتاب مخصص للاستخدام التعليمي والبحثي.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

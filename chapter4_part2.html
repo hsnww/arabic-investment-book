@@ -168,23 +168,10 @@
             }
         }
     </style>
+    <!-- Google Analytics -->
+    <script src="js/analytics.js"></script>
 </head>
 <body>
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
-        
-        // تتبع قراءة الفصل
-        gtag('event', 'begin_checkout', {
-            'content_name': 'الفصل الرابع الجزء الثاني',
-            'content_category': 'قراءة الفصول'
-        });
-    </script>
-
     <!-- شريط تقدم القراءة -->
     <div class="reading-progress">
         <div class="reading-progress-bar" id="progressBar"></div>
@@ -303,7 +290,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/analytics.js"></script>
     <script>
         // تتبع تقدم القراءة
         window.addEventListener('scroll', function() {
