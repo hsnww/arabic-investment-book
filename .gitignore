@@ -1,0 +1,29 @@
+# استثناء مجلد ملفات PDF
+pdf-book/
+
+# استثناء مجلد ملفات النص
+text/
+
+# استثناء ملفات Python
+*.py
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# استثناء ملفات النظام
+.DS_Store
+Thumbs.db
+
+# استثناء ملفات IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# استثناء ملفات Tesseract
+*.traineddata 
