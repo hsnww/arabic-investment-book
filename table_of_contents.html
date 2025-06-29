@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="جدول محتويات كتاب المال والاستثمار في الأسواق المالية - فهرس شامل لجميع الفصول والأبواب من الاستثمار والاستقلال المالي إلى الأسهم السعودية">
+    <meta name="keywords" content="جدول المحتويات, فهرس الكتاب, الاستثمار والاستقلال المالي, أسواق المال, التحليل الأساسي, التحليل الفني, الأسهم السعودية">
+    <title>جدول المحتويات - المال والاستثمار في الأسواق المالية</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        
+        .chapter-container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin: 2rem auto;
+            max-width: 1000px;
+            overflow: hidden;
+        }
+        
+        .chapter-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        .chapter-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+        }
+        
+        .chapter-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .chapter-header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .chapter-content {
+            padding: 3rem 2rem;
+            line-height: 2;
+            font-size: 1.1rem;
+        }
+        
+        .chapter-content h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin: 2rem 0 1rem 0;
+            font-weight: 600;
+        }
+        
+        .chapter-content h3 {
+            color: #34495e;
+            margin: 1.5rem 0 1rem 0;
+            font-weight: 600;
+        }
+        
+        .chapter-content p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+        
+        .info-box {
+            background: #f8f9fa;
+            border-left: 5px solid #3498db;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .navigation-buttons {
+            background: #f8f9fa;
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        .btn-custom {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 0 0.5rem;
+        }
+        
+        .btn-custom:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+            color: white;
+        }
+        
+        .btn-outline-custom {
+            background: transparent;
+            border: 2px solid #667eea;
+            color: #667eea;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 0 0.5rem;
+        }
+        
+        .btn-outline-custom:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .topic-card {
+            background: white;
+            border: 1px solid #e9ecef;
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .topic-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        
+        .topic-card h4 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .topic-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .topic-card li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f1f3f4;
+            position: relative;
+            padding-right: 1.5rem;
+        }
+        
+        .topic-card li:before {
+            content: '•';
+            color: #667eea;
+            font-weight: bold;
+            position: absolute;
+            right: 0;
+        }
+        
+        .topic-card li:last-child {
+            border-bottom: none;
+        }
+        
+        .book-structure {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .book-structure h3 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+        }
+        
+        .book-structure .chapter-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .book-structure .chapter-list li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #e9ecef;
+            position: relative;
+            padding-right: 2rem;
+        }
+        
+        .book-structure .chapter-list li:before {
+            content: '📖';
+            position: absolute;
+            right: 0;
+        }
+        
+        .stats-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .stat-item {
+            background: rgba(255,255,255,0.1);
+            padding: 1rem;
+            border-radius: 10px;
+        }
+        
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        @media (max-width: 768px) {
+            .chapter-header h1 {
+                font-size: 2rem;
+            }
+            
+            .chapter-content {
+                padding: 2rem 1rem;
+            }
+            
+            .topics-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="chapter-container">
+        <div class="chapter-header">
+            <h1><i class="fas fa-list me-3"></i>جدول المحتويات</h1>
+            <div class="subtitle">فهرس شامل لجميع أبواب وفصول الكتاب</div>
+        </div>
+        
+        <div class="chapter-content">
+            <div class="highlight-box">
+                <h3><i class="fas fa-star me-2"></i>نظرة عامة على الكتاب</h3>
+                <p>يحتوي هذا الكتاب على ستة أبواب رئيسية و19 فصلاً، يغطي جميع جوانب الاستثمار في الأسواق المالية من المفاهيم الأساسية إلى الاستراتيجيات المتقدمة.</p>
+            </div>
+            
+            <h2>المفاهيم الأساسية</h2>
+            <p>يقدم الكتاب المبادئ الأساسية للاستثمار في الأسهم:</p>
+            
+            <div class="topics-grid">
+                <div class="topic-card">
+                    <h4><i class="fas fa-plus-circle me-2"></i>فوائد الاستثمار</h4>
+                    <ul>
+                        <li>الاستثمار عن طريق الإنترنت</li>
+                        <li>نمو رأس المال</li>
+                        <li>العائد على الاستثمار</li>
+                        <li>التنويع في المحفظة</li>
+                    </ul>
+                </div>
+                
+                <div class="topic-card">
+                    <h4><i class="fas fa-exclamation-triangle me-2"></i>مخاطر الاستثمار</h4>
+                    <ul>
+                        <li>مخاطر الاستثمار في الأسهم</li>
+                        <li>مخاطر الاستثمار عبر الإنترنت</li>
+                        <li>تقلبات السوق</li>
+                        <li>مخاطر السيولة</li>
+                    </ul>
+                </div>
+                
+                <div class="topic-card">
+                    <h4><i class="fas fa-calculator me-2"></i>التخطيط المالي</h4>
+                    <ul>
+                        <li>الحاجة إلى التخطيط المالي</li>
+                        <li>مبادئ التخطيط المالي</li>
+                        <li>وضع الأهداف المالية</li>
+                        <li>إدارة المخاطر</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="stats-section">
+                <h3><i class="fas fa-info-circle me-2"></i>إحصائيات الكتاب</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">صفحات</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">فهرس المحتويات</span>
+                        <span class="stat-label">نوع المحتوى</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">أبواب رئيسية</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">19</span>
+                        <span class="stat-label">فصل</span>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>هيكل الكتاب الكامل</h2>
+            <div class="book-structure">
+                <h3><i class="fas fa-list me-2"></i>الأبواب والفصول</h3>
+                <p>يحتوي الكتاب على ستة أبواب رئيسية و19 فصلاً:</p>
+                
+                <div class="topics-grid">
+                    <div class="topic-card">
+                        <h4>الباب الأول: الاستثمار والاستقلال المالي</h4>
+                        <ul class="chapter-list">
+                            <li>الفصل الأول: الاستثمار في الأسهم</li>
+                            <li>الفصل الثاني: التخطيط المالي</li>
+                            <li>الفصل الثالث: حساب الأداء الاستثماري</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="topic-card">
+                        <h4>الباب الثاني: أسواق المال ووسطاء السوق</h4>
+                        <ul class="chapter-list">
+                            <li>الفصل الرابع: أسواق تداول الأسهم</li>
+                            <li>الفصل الخامس: طرح الأسهم (الاكتتاب)</li>
+                            <li>الفصل السادس: الوسطاء الماليون</li>
+                            <li>الفصل السابع: أوامر البيع والشراء</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="topic-card">
+                        <h4>الباب الثالث: تحليل الأسهم</h4>
+                        <ul class="chapter-list">
+                            <li>الفصل الثامن: مدى جدوى تحليل الأسهم</li>
+                            <li>الفصل التاسع: التحليل الأساسي</li>
+                            <li>الفصل العاشر: المؤشرات المالية</li>
+                            <li>الفصل الحادي عشر: المؤشرات الاقتصادية</li>
+                            <li>الفصل الثاني عشر: التحليل الفني</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="topic-card">
+                        <h4>الباب الرابع: التداول عبر الإنترنت</h4>
+                        <ul class="chapter-list">
+                            <li>الفصل الثالث عشر: الإنترنت والمستثمر</li>
+                            <li>الفصل الرابع عشر: دليل المواقع الاستثمارية</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="topic-card">
+                        <h4>الباب الخامس: الاستثمار بأكثر من طريقة</h4>
+                        <ul class="chapter-list">
+                            <li>الفصل الخامس عشر: صناديق الاستثمار</li>
+                            <li>الفصل السادس عشر: عقود الخيار</li>
+                            <li>الفصل السابع عشر: السندات</li>
+                            <li>الفصل الثامن عشر: الأسواق الآجلة</li>
+                            <li>الفصل التاسع عشر: متفرقات</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="topic-card">
+                        <h4>الباب السادس: الأسهم السعودية</h4>
+                        <ul class="chapter-list">
+                            <li>الأسهم السعودية</li>
+                            <li>أنظمة السوق</li>
+                            <li>التحليل الأساسي والفني</li>
+                            <li>مستقبل السوق السعودي</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="info-box">
+                <h4><i class="fas fa-lightbulb me-2"></i>ملاحظة مهمة</h4>
+                <p>هذا الجدول يحتوي على فهرس المحتويات الكامل للكتاب. للوصول إلى المحتوى التفصيلي لكل فصل، سيتم إنشاء صفحات منفصلة لكل فصل من الكتاب.</p>
+            </div>
+            
+            <h2>المواضيع الرئيسية في الكتاب</h2>
+            <div class="topics-grid">
+                <div class="topic-card">
+                    <h4><i class="fas fa-globe me-2"></i>الأسواق العالمية</h4>
+                    <ul>
+                        <li>الأسواق الأمريكية</li>
+                        <li>الأسواق الخليجية</li>
+                        <li>الأسواق الدولية</li>
+                        <li>الاستثمار عبر الإنترنت</li>
+                    </ul>
+                </div>
+                
+                <div class="topic-card">
+                    <h4><i class="fas fa-chart-bar me-2"></i>التحليل والتداول</h4>
+                    <ul>
+                        <li>التحليل الأساسي</li>
+                        <li>التحليل الفني</li>
+                        <li>المؤشرات المالية</li>
+                        <li>أوامر البيع والشراء</li>
+                    </ul>
+                </div>
+                
+                <div class="topic-card">
+                    <h4><i class="fas fa-tools me-2"></i>الأدوات والموارد</h4>
+                    <ul>
+                        <li>المواقع المالية</li>
+                        <li>برامج التحليل</li>
+                        <li>الوسطاء الماليون</li>
+                        <li>المصطلحات الاستثمارية</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="navigation-buttons">
+            <a href="index.html" class="btn btn-outline-custom">
+                <i class="fas fa-home me-2"></i>الصفحة الرئيسية
+            </a>
+            <a href="toc.html" class="btn btn-outline-custom">
+                <i class="fas fa-list me-2"></i>فهرس المحتويات
+            </a>
+            <a href="introduction.html" class="btn btn-custom">
+                <i class="fas fa-arrow-right me-2"></i>التمهيد
+            </a>
+            <a href="chapter1.html" class="btn btn-custom">
+                <i class="fas fa-arrow-left me-2"></i>الفصل الأول
+            </a>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

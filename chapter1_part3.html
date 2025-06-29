@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="الفصل الأول الجزء الثالث: الاستثمار في الأسهم - كيفية بدء الاستثمار، نصائح عملية، تجنب الأخطاء الشائعة">
+    <meta name="keywords" content="كيفية بدء الاستثمار, نصائح عملية, تجنب الأخطاء الشائعة, الاستثمار الأولي, التخطيط الاستثماري">
+    <title>الفصل الأول الجزء الثالث: الاستثمار في الأسهم - المال والاستثمار في الأسواق المالية</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        
+        .chapter-container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin: 2rem auto;
+            max-width: 1000px;
+            overflow: hidden;
+        }
+        
+        .chapter-header {
+            background: linear-gradient(135deg, #dc3545 0%, #fd7e14 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        .chapter-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+        }
+        
+        .chapter-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .chapter-header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .chapter-content {
+            padding: 3rem 2rem;
+            line-height: 2;
+            font-size: 1.1rem;
+        }
+        
+        .chapter-content h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #dc3545;
+            padding-bottom: 0.5rem;
+            margin: 2rem 0 1rem 0;
+            font-weight: 600;
+        }
+        
+        .chapter-content h3 {
+            color: #34495e;
+            margin: 1.5rem 0 1rem 0;
+            font-weight: 600;
+        }
+        
+        .chapter-content p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #dc3545 0%, #fd7e14 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(220, 53, 69, 0.3);
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .danger-box {
+            background: #f8d7da;
+            border-left: 5px solid #dc3545;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .info-box {
+            background: #f8f9fa;
+            border-left: 5px solid #17a2b8;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .risks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .risk-card {
+            background: white;
+            border: 1px solid #e9ecef;
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .risk-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        
+        .risk-card h4 {
+            color: #dc3545;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .risk-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .risk-card li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f1f3f4;
+            position: relative;
+            padding-right: 1.5rem;
+        }
+        
+        .risk-card li:before {
+            content: '⚠️';
+            position: absolute;
+            right: 0;
+        }
+        
+        .risk-card li:last-child {
+            border-bottom: none;
+        }
+        
+        .navigation-buttons {
+            background: #f8f9fa;
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        .btn-custom {
+            background: linear-gradient(135deg, #dc3545 0%, #fd7e14 100%);
+            border: none;
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 0 0.5rem;
+        }
+        
+        .btn-custom:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(220, 53, 69, 0.4);
+            color: white;
+        }
+        
+        .btn-outline-custom {
+            background: transparent;
+            border: 2px solid #dc3545;
+            color: #dc3545;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 0 0.5rem;
+        }
+        
+        .btn-outline-custom:hover {
+            background: #dc3545;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .part-indicator {
+            background: #dc3545;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .chapter-header h1 {
+                font-size: 2rem;
+            }
+            
+            .chapter-content {
+                padding: 2rem 1rem;
+            }
+            
+            .risks-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="chapter-container">
+        <div class="chapter-header">
+            <h1><i class="fas fa-exclamation-triangle me-3"></i>الفصل الأول</h1>
+            <div class="subtitle">الاستثمار في الأسهم - الجزء الثالث</div>
+            <div class="part-indicator">الجزء الثالث من أربعة أجزاء</div>
+        </div>
+        
+        <div class="chapter-content">
+            <div class="highlight-box">
+                <h3><i class="fas fa-exclamation-circle me-2"></i>مخاطر الاستثمار في الأسهم</h3>
+                <p>في هذا الجزء نستكشف المخاطر المختلفة المرتبطة بالاستثمار في الأسهم، سواء المخاطر العامة أو المخاطر الخاصة بالاستثمار عبر الإنترنت، مع التركيز على طرق الحماية والاحتياطات المطلوبة.</p>
+            </div>
+            
+            <h2><i class="fas fa-shield-alt me-2"></i>المخاطر العامة للاستثمار في الأسهم</h2>
+            <p>بلا شك إن الاستثمار في الأسهم له مخاطر كثيرة. منها ما تحتمه طبيعة الاستثمار التجاري بجميع أشكاله، نتيجة وجود عنصر المخاطرة متى ما أقدم الشخص على الاستثمار في تجارة معينة؛ ومنها ما هو خاص بالأسهم ذاتها.</p>
+            
+            <div class="warning-box">
+                <h4><i class="fas fa-chart-line me-2"></i>طبيعة الأسواق المالية</h4>
+                <p>ومن المعروف أن تداول الأسهم بشكل عام يعتبر أكثر خطراً من بعض سبل الاستثمار الأخرى كونه يمر بمراحل صعود وهبوط من الصعب التنبؤ بها. كما إن الاستثمار في الأسهم يتطلب من المستثمر الثقة في قدرة غيره على التصرف برأس ماله!</p>
+            </div>
+            
+            <h2><i class="fas fa-users me-2"></i>مخاطر إدارة الشركات</h2>
+            <p>فعند شرائك لأسهم شركة ما فأنت في واقع الأمر تضع ثقتك في إدارة هذه الشركة على أنها سوف تتصرف بأحسن الطرق لتحقق العائد المالي الذي تطمح به. وإن كنت تستثمر عن طريق وسيط متخصص فأنت تثق في قدرة ذلك الوسيط على حسن التصرف وعلى توفر المعرفة الكافية لديه.</p>
+            
+            <div class="danger-box">
+                <h4><i class="fas fa-exclamation-triangle me-2"></i>مخاطر سوء الإدارة</h4>
+                <p>هذه التوقعات قد لا تكون دائماً في محلها، فليست كل إدارات الشركات ناجحة أو حتى نزيهة، بل إنه نظراً لطبيعة الشركات المساهمة، والتي تخلي مسؤولية إدارتها من عواقب سوء الإدارة، فقد لا يكون لدى إدارة الشركة الدافع القوي لحسن التصرف بما لديها من أموال.</p>
+            </div>
+            
+            <div class="risks-grid">
+                <div class="risk-card">
+                    <h4><i class="fas fa-project-diagram me-2"></i>مخاطر المشاريع</h4>
+                    <ul>
+                        <li>إقحام الشركة في مشاريع غير واقعية</li>
+                        <li>عدم تناسب المشاريع مع طبيعة الشركة</li>
+                        <li>فشل المشاريع الجديدة</li>
+                        <li>خسارة رأس المال المستثمر</li>
+                    </ul>
+                </div>
+                
+                <div class="risk-card">
+                    <h4><i class="fas fa-chart-pie me-2"></i>مخاطر الإدارة المالية</h4>
+                    <ul>
+                        <li>عدم التحكم الجيد في المصروفات</li>
+                        <li>سوء إدارة التدفقات النقدية</li>
+                        <li>الديون المفرطة</li>
+                        <li>الإفلاس المحتمل</li>
+                    </ul>
+                </div>
+                
+                <div class="risk-card">
+                    <h4><i class="fas fa-file-alt me-2"></i>مخاطر التقارير المالية</h4>
+                    <ul>
+                        <li>تقارير مالية خاطئة</li>
+                        <li>تقارير كاذبة عن مكانة الشركة</li>
+                        <li>إخفاء الخسائر الحقيقية</li>
+                        <li>التلاعب المحاسبي</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h2><i class="fas fa-building me-2"></i>مثال على التلاعب المحاسبي: شركة إنرون</h2>
+            <p>ويعتبر ما حدث لشركة إنرون (Enron) والتلاعب المحاسبي الذي قامت به الشركة واحداً من أكبر حالات الإفلاس في تاريخ الولايات المتحدة.</p>
+            
+            <div class="info-box">
+                <h4><i class="fas fa-history me-2"></i>قصة شركة إنرون</h4>
+                <p>كانت إنرون واحدة من أكبر شركات الطاقة في الولايات المتحدة، لكنها انهارت في عام 2001 بسبب التلاعب المحاسبي والاحتيال المالي. فقد قامت الإدارة بإخفاء الديون وإظهار أرباح وهمية، مما أدى إلى خسارة المستثمرين مليارات الدولارات.</p>
+            </div>
+            
+            <h2><i class="fas fa-network-wired me-2"></i>مخاطر الاستثمار عبر الإنترنت</h2>
+            <p>هناك بعض المخاطر المصاحبة للاستثمار عبر الإنترنت، علاوة على مخاطر الاستثمار بشكل عام وهي تأتي نتيجة اعتماد المستثمر على تقنية جديدة لا تخلو من مشاكلها الخاصة بها.</p>
+            
+            <div class="risks-grid">
+                <div class="risk-card">
+                    <h4><i class="fas fa-user-tie me-2"></i>مخاطر اختيار الوسيط</h4>
+                    <ul>
+                        <li>كثرة الوسطاء الإلكترونيين</li>
+                        <li>صعوبة اختيار الوسيط المناسب</li>
+                        <li>عدم كفاية الرقابة الحكومية</li>
+                        <li>احتمال استغلال العملاء</li>
+                    </ul>
+                </div>
+                
+                <div class="risk-card">
+                    <h4><i class="fas fa-wifi me-2"></i>مخاطر التقنية</h4>
+                    <ul>
+                        <li>انقطاع خطوط الاتصال</li>
+                        <li>خلل في أجهزة الوسيط</li>
+                        <li>عدم توفر الإنترنت</li>
+                        <li>الحاجة لوسائل بديلة</li>
+                    </ul>
+                </div>
+                
+                <div class="risk-card">
+                    <h4><i class="fas fa-keyboard me-2"></i>مخاطر الأخطاء البشرية</h4>
+                    <ul>
+                        <li>إدخال أوامر خاطئة</li>
+                        <li>أخطاء في الكميات</li>
+                        <li>أخطاء في نوع الأمر (شراء/بيع)</li>
+                        <li>عدم تحمل الوسيط المسؤولية</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h2><i class="fas fa-chart-line me-2"></i>مخاطر الأسعار الخاطئة</h2>
+            <p>قد يحدث أحياناً أن يكون هناك خلل في الأسعار المعروضة (لسبب أو آخر وهي نادرة بأي حال من الأحوال)؛ فيتخذ الشخص قراره بناء على أسعار خاطئة، أو غير فورية. ولو أن هذا الخطأ حدث عن طريق الوسيط وجهاً لوجه أو من خلال الهاتف لتحمل الوسيط الخطأ.</p>
+            
+            <h2><i class="fas fa-hand-holding-usd me-2"></i>مخاطر العروض المغرية</h2>
+            <p>هناك العديد من العروض المغرية للدخول في استثمارات معينة ممن يدّعي أصحابها إمكانية الحصول على عوائد غير معقولة؛ والتي يجب على المستثمر تجنبها.</p>
+            
+            <div class="warning-box">
+                <h4><i class="fas fa-exclamation-circle me-2"></i>قاعدة مهمة</h4>
+                <p>ويجب بشكل عام تجنب العروض التي تدّعي عدم وجود أي نوع من المخاطرة، حيث لا يوجد أي استثمار خال من المخاطرة. ويجب عدم الاندفاع واتخاذ قرار الاستثمار بشكل سريع مهما كان الأمر وهو عادة ما يسعى إليه محتالو الإنترنت.</p>
+            </div>
+            
+            <h2><i class="fas fa-user-secret me-2"></i>طرق الاحتيال على الإنترنت</h2>
+            <p>هناك طرق كثيرة للاحتيال. منها ما يعرف بالطرق الهرمية (Pyramid Schemes) والتي تعتمد على تعاون عدد كبير من الناس في بث معلومة ما أو جمع مبلغ معين.</p>
+            
+            <div class="danger-box">
+                <h4><i class="fas fa-bullhorn me-2"></i>طريقة "Pump and Dump"</h4>
+                <p>ومنها كذلك طرق تعتمد على الإشهار بأسهم معينة لاستقطاب عدد كبير من المستثمرين. الأمر الذي يؤدي إلى ارتفاع سعر السهم؛ وبالتالي قيام من قام بالإشهار ببيع ما لديه من أسهم. تعرف هذه الطريقة بطريقة "Pump and Dump".</p>
+            </div>
+            
+            <h2><i class="fas fa-lock me-2"></i>الأمان في التداول الإلكتروني</h2>
+            <p>يجب التأكد من أن الاتصال بالوسيط يتم عن طريق آمن، وذلك بواسطة استخدام متصفح لديه القدرة على الاتصال الآمن. كذلك التأكد من أن الوسيط يقدم خدمة آمنة.</p>
+            
+            <div class="info-box">
+                <h4><i class="fas fa-shield-alt me-2"></i>معايير الأمان المطلوبة</h4>
+                <ul>
+                    <li>استخدام HTTPS بدلاً من HTTP</li>
+                    <li>تشفير 128 بت أو أكثر</li>
+                    <li>شهادات أمان موثوقة</li>
+                    <li>عدم إرسال بيانات الحساب عبر البريد الإلكتروني</li>
+                    <li>استخدام كلمات مرور قوية</li>
+                    <li>تفعيل المصادقة الثنائية</li>
+                </ul>
+            </div>
+            
+            <div class="highlight-box">
+                <h3><i class="fas fa-lightbulb me-2"></i>نصيحة مهمة</h3>
+                <p>يجب عدم إرسال رقم الحساب للوسيط عن طريق البريد الإلكتروني على الإطلاق. حيث بإمكان أي شخص أن يقرأ الرسالة ويعرف رقم الحساب. استخدم دائماً القنوات الآمنة للتواصل مع الوسيط.</p>
+            </div>
+        </div>
+        
+        <div class="navigation-buttons">
+            <a href="chapter1_part2.html" class="btn btn-outline-custom">
+                <i class="fas fa-arrow-left me-2"></i>الجزء الثاني
+            </a>
+            <a href="chapter1_part4.html" class="btn btn-custom">
+                <i class="fas fa-arrow-right me-2"></i>الجزء الرابع
+            </a>
+            <a href="index.html" class="btn btn-outline-custom">
+                <i class="fas fa-home me-2"></i>الصفحة الرئيسية
+            </a>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

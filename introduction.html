@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="مقدمة كتاب المال والاستثمار في الأسواق المالية - تمهيد شامل عن الاستثمار والاستقلال المالي، التخطيط المالي، التحليل الأساسي والفني، التداول عبر الإنترنت">
+    <meta name="keywords" content="مقدمة الاستثمار, التخطيط المالي, التحليل الأساسي, التحليل الفني, التداول عبر الإنترنت, الاستقلال المالي, فهد الحويماني">
+    <title>المقدمة - المال والاستثمار في الأسواق المالية</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        
+        .chapter-container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin: 2rem auto;
+            max-width: 900px;
+            overflow: hidden;
+        }
+        
+        .chapter-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        .chapter-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+        }
+        
+        .chapter-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .chapter-header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .chapter-content {
+            padding: 3rem 2rem;
+            line-height: 2;
+            font-size: 1.1rem;
+        }
+        
+        .chapter-content h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin: 2rem 0 1rem 0;
+            font-weight: 600;
+        }
+        
+        .chapter-content h3 {
+            color: #34495e;
+            margin: 1.5rem 0 1rem 0;
+            font-weight: 600;
+        }
+        
+        .chapter-content p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+        
+        .info-box {
+            background: #f8f9fa;
+            border-left: 5px solid #3498db;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .navigation-buttons {
+            background: #f8f9fa;
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        .btn-custom {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 0 0.5rem;
+        }
+        
+        .btn-custom:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+            color: white;
+        }
+        
+        .btn-outline-custom {
+            background: transparent;
+            border: 2px solid #667eea;
+            color: #667eea;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 0 0.5rem;
+        }
+        
+        .btn-outline-custom:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .topic-card {
+            background: white;
+            border: 1px solid #e9ecef;
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .topic-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        
+        .topic-card h4 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .topic-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .topic-card li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f1f3f4;
+            position: relative;
+            padding-right: 1.5rem;
+        }
+        
+        .topic-card li:before {
+            content: '•';
+            color: #667eea;
+            font-weight: bold;
+            position: absolute;
+            right: 0;
+        }
+        
+        .topic-card li:last-child {
+            border-bottom: none;
+        }
+        
+        .book-info {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .book-info h3 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+        }
+        
+        .book-info .info-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .book-info .info-list li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #e9ecef;
+            position: relative;
+            padding-right: 2rem;
+        }
+        
+        .book-info .info-list li:before {
+            content: '📚';
+            position: absolute;
+            right: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .chapter-header h1 {
+                font-size: 2rem;
+            }
+            
+            .chapter-content {
+                padding: 2rem 1rem;
+            }
+            
+            .topics-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="chapter-container">
+        <div class="chapter-header">
+            <h1><i class="fas fa-info-circle me-3"></i>التمهيد</h1>
+            <div class="subtitle">صفحة تمهيدية قبل الفصل الأول</div>
+        </div>
+        
+        <div class="chapter-content">
+            <div class="highlight-box">
+                <h3><i class="fas fa-star me-2"></i>معلومات الكتاب الأساسية</h3>
+                <p>هذه الصفحة تحتوي على المعلومات الأساسية عن الكتاب ومحتوياته الرئيسية.</p>
+            </div>
+            
+            <h2>محتوى الكتاب</h2>
+            <p>يغطي هذا الكتاب المواضيع التالية:</p>
+            
+            <div class="topics-grid">
+                <div class="topic-card">
+                    <h4><i class="fas fa-globe me-2"></i>الأسواق المالية</h4>
+                    <ul>
+                        <li>الأسهم الدولية والأسهم السعودية</li>
+                        <li>التحليل الأساسي والتحليل الفني</li>
+                        <li>وسائل استثمارية ومواضيع اقتصادية</li>
+                        <li>أنظمة وإجراءات السوق</li>
+                    </ul>
+                </div>
+                
+                <div class="topic-card">
+                    <h4><i class="fas fa-chart-line me-2"></i>التحليل والتداول</h4>
+                    <ul>
+                        <li>التحليل الأساسي للأسهم</li>
+                        <li>التحليل الفني والمؤشرات</li>
+                        <li>مستويات الدعم والمقاومة</li>
+                        <li>الفجوات وبرامج التحليل</li>
+                    </ul>
+                </div>
+                
+                <div class="topic-card">
+                    <h4><i class="fas fa-crown me-2"></i>السوق السعودي</h4>
+                    <ul>
+                        <li>باب كامل عن السوق السعودي</li>
+                        <li>آلية عمل السوق السعودي</li>
+                        <li>التحليل الأساسي والفني</li>
+                        <li>مستقبل السوق والتوصيات</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="book-info">
+                <h3><i class="fas fa-info-circle me-2"></i>معلومات الكتاب</h3>
+                <ul class="info-list">
+                    <li><strong>العنوان:</strong> المال والاستثمار في الأسواق المالية</li>
+                    <li><strong>المؤلف:</strong> فهد الحويماني</li>
+                    <li><strong>الطبعة:</strong> الطبعة الثانية</li>
+                    <li><strong>عدد الصفحات:</strong> 717 صفحة</li>
+                    <li><strong>عدد الكلمات:</strong> 187,701 كلمة</li>
+                    <li><strong>عدد الأحرف:</strong> 1,757,411 حرف</li>
+                    <li><strong>الناشر:</strong> دار النشر</li>
+                    <li><strong>حقوق الطبع:</strong> محفوظة للناشر</li>
+                </ul>
+            </div>
+            
+            <div class="info-box">
+                <h4><i class="fas fa-exclamation-triangle me-2"></i>ملاحظة مهمة</h4>
+                <p>هذه الصفحة تمهيدية وتحتوي على معلومات أساسية عن الكتاب. للوصول إلى المحتوى التفصيلي، يرجى الانتقال إلى الفصول التالية.</p>
+            </div>
+        </div>
+        
+        <div class="navigation-buttons">
+            <a href="index.html" class="btn btn-outline-custom">
+                <i class="fas fa-home me-2"></i>الصفحة الرئيسية
+            </a>
+            <a href="toc.html" class="btn btn-outline-custom">
+                <i class="fas fa-list me-2"></i>فهرس المحتويات
+            </a>
+            <a href="preface.html" class="btn btn-custom">
+                <i class="fas fa-arrow-right me-2"></i>المقدمة
+            </a>
+            <a href="chapter1.html" class="btn btn-custom">
+                <i class="fas fa-arrow-left me-2"></i>الفصل الأول
+            </a>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

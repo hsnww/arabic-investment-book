@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="جدول محتويات تفصيلي لكتاب المال والاستثمار في الأسواق المالية - فهرس شامل لجميع الأبواب والفصول مع روابط مباشرة">
+    <meta name="keywords" content="جدول المحتويات التفصيلي, فهرس الكتاب الكامل, روابط الفصول, أبواب الكتاب, فهد الحويماني">
+    <title>جدول المحتويات التفصيلي - المال والاستثمار في الأسواق المالية</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        
+        .toc-container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin: 2rem auto;
+            max-width: 1000px;
+            overflow: hidden;
+        }
+        
+        .toc-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        .toc-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+        }
+        
+        .toc-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .toc-header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .toc-content {
+            padding: 3rem 2rem;
+        }
+        
+        .section {
+            margin-bottom: 3rem;
+        }
+        
+        .section h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+        
+        .chapter-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .chapter-item {
+            background: #f8f9fa;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+        
+        .chapter-item:hover {
+            transform: translateX(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-color: #667eea;
+        }
+        
+        .chapter-link {
+            display: flex;
+            align-items: center;
+            padding: 1.5rem;
+            color: #2c3e50;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .chapter-link:hover {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .chapter-number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-left: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .chapter-info {
+            flex: 1;
+        }
+        
+        .chapter-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .chapter-description {
+            color: #6c757d;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+        
+        .chapter-icon {
+            color: #667eea;
+            font-size: 1.2rem;
+            margin-left: 1rem;
+        }
+        
+        .navigation-buttons {
+            background: #f8f9fa;
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        .btn-custom {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 0 0.5rem;
+        }
+        
+        .btn-custom:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+            color: white;
+        }
+        
+        .btn-outline-custom {
+            background: transparent;
+            border: 2px solid #667eea;
+            color: #667eea;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 0 0.5rem;
+        }
+        
+        .btn-outline-custom:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .book-stats {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .book-stats h3 {
+            margin-bottom: 1rem;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .stat-item {
+            background: rgba(255,255,255,0.1);
+            padding: 1rem;
+            border-radius: 10px;
+        }
+        
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        @media (max-width: 768px) {
+            .toc-header h1 {
+                font-size: 2rem;
+            }
+            
+            .toc-content {
+                padding: 2rem 1rem;
+            }
+            
+            .chapter-link {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .chapter-number {
+                margin: 0 0 1rem 0;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="toc-container">
+        <div class="toc-header">
+            <h1><i class="fas fa-list me-3"></i>فهرس المحتويات</h1>
+            <div class="subtitle">المال والاستثمار في الأسواق المالية - فهد الحويماني</div>
+        </div>
+        
+        <div class="toc-content">
+            <div class="book-stats">
+                <h3><i class="fas fa-info-circle me-2"></i>معلومات الكتاب</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">717</span>
+                        <span class="stat-label">صفحة</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">187,701</span>
+                        <span class="stat-label">كلمة</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1,757,411</span>
+                        <span class="stat-label">حرف</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">الطبعة الثانية</span>
+                        <span class="stat-label">الطبعة</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2><i class="fas fa-book-open me-2"></i>البدايات</h2>
+                <ul class="chapter-list">
+                    <li class="chapter-item">
+                        <a href="preface.html" class="chapter-link">
+                            <div class="chapter-number">م</div>
+                            <div class="chapter-info">
+                                <div class="chapter-title">المقدمة</div>
+                                <div class="chapter-description">مقدمة الطبعة الأولى ورسالة المؤلف</div>
+                            </div>
+                            <i class="fas fa-arrow-left chapter-icon"></i>
+                        </a>
+                    </li>
+                    <li class="chapter-item">
+                        <a href="preface_second_edition.html" class="chapter-link">
+                            <div class="chapter-number">م٢</div>
+                            <div class="chapter-info">
+                                <div class="chapter-title">مقدمة الطبعة الثانية</div>
+                                <div class="chapter-description">تحديثات وتطورات في عالم الاستثمار</div>
+                            </div>
+                            <i class="fas fa-arrow-left chapter-icon"></i>
+                        </a>
+                    </li>
+                    <li class="chapter-item">
+                        <a href="introduction.html" class="chapter-link">
+                            <div class="chapter-number">ت</div>
+                            <div class="chapter-info">
+                                <div class="chapter-title">التمهيد</div>
+                                <div class="chapter-description">معلومات أساسية عن الكتاب ومحتوياته</div>
+                            </div>
+                            <i class="fas fa-arrow-left chapter-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2><i class="fas fa-chart-line me-2"></i>الفصول الرئيسية</h2>
+                <ul class="chapter-list">
+                    <li class="chapter-item">
+                        <a href="table_of_contents.html" class="chapter-link">
+                            <div class="chapter-number">ج</div>
+                            <div class="chapter-info">
+                                <div class="chapter-title">جدول المحتويات</div>
+                                <div class="chapter-description">فهرس شامل لجميع أبواب وفصول الكتاب</div>
+                            </div>
+                            <i class="fas fa-arrow-left chapter-icon"></i>
+                        </a>
+                    </li>
+                    <li class="chapter-item">
+                        <a href="chapter1_part1.html" class="chapter-link">
+                            <div class="chapter-number">1</div>
+                            <div class="chapter-info">
+                                <div class="chapter-title">الفصل الأول: الاستثمار في الأسهم</div>
+                                <div class="chapter-description">مقدمة شاملة للاستثمار في الأسهم - مقسم إلى 4 أجزاء</div>
+                            </div>
+                            <div class="chapter-parts">
+                                <a href="chapter1_part1.html" class="btn btn-outline-primary btn-sm">الجزء الأول</a>
+                                <a href="chapter1_part2.html" class="btn btn-outline-success btn-sm">الجزء الثاني</a>
+                                <a href="chapter1_part3.html" class="btn btn-outline-warning btn-sm">الجزء الثالث</a>
+                                <a href="chapter1_part4.html" class="btn btn-outline-info btn-sm">الجزء الرابع</a>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="chapter-item">
+                        <a href="chapter2.html" class="chapter-link">
+                            <div class="chapter-number">2</div>
+                            <div class="chapter-info">
+                                <div class="chapter-title">الفصل الثاني: التخطيط المالي</div>
+                                <div class="chapter-description">مبادئ التخطيط المالي الشخصي وبناء الثروة</div>
+                            </div>
+                            <i class="fas fa-arrow-left chapter-icon"></i>
+                        </a>
+                    </li>
+                    <li class="chapter-item">
+                        <a href="chapter3_part1.html" class="chapter-link">
+                            <div class="chapter-number">3</div>
+                            <div class="chapter-info">
+                                <div class="chapter-title">الفصل الثالث: حساب الأداء الاستثماري</div>
+                                <div class="chapter-description">مفاهيم القيمة الزمنية للمال وحساب العائد - مقسم إلى 4 أجزاء</div>
+                            </div>
+                            <div class="chapter-parts">
+                                <a href="chapter3_part1.html" class="btn btn-outline-primary btn-sm">الجزء الأول</a>
+                                <a href="chapter3_part2.html" class="btn btn-outline-success btn-sm">الجزء الثاني</a>
+                                <a href="chapter3_part3.html" class="btn btn-outline-warning btn-sm">الجزء الثالث</a>
+                                <a href="chapter3_part4.html" class="btn btn-outline-info btn-sm">الجزء الرابع</a>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="chapter-item">
+                        <a href="chapter4.html" class="chapter-link">
+                            <div class="chapter-number">4</div>
+                            <div class="chapter-info">
+                                <div class="chapter-title">الفصل الرابع</div>
+                                <div class="chapter-description">أسواق تداول الأسهم وآليات العمل</div>
+                            </div>
+                            <i class="fas fa-arrow-left chapter-icon"></i>
+                        </a>
+                    </li>
+                    <li class="chapter-item">
+                        <a href="chapter5.html" class="chapter-link">
+                            <div class="chapter-number">5</div>
+                            <div class="chapter-info">
+                                <div class="chapter-title">الفصل الخامس</div>
+                                <div class="chapter-description">طرح الأسهم واكتتاب الشركات</div>
+                            </div>
+                            <i class="fas fa-arrow-left chapter-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2><i class="fas fa-crown me-2"></i>السوق السعودي</h2>
+                <ul class="chapter-list">
+                    <li class="chapter-item">
+                        <a href="saudi-market.html" class="chapter-link">
+                            <div class="chapter-number">س</div>
+                            <div class="chapter-info">
+                                <div class="chapter-title">الباب السادس: الأسهم السعودية</div>
+                                <div class="chapter-description">معلومات شاملة عن السوق السعودي والتحليلين الأساسي والفني</div>
+                            </div>
+                            <i class="fas fa-arrow-left chapter-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2><i class="fas fa-tools me-2"></i>أدوات وموارد</h2>
+                <ul class="chapter-list">
+                    <li class="chapter-item">
+                        <a href="glossary.html" class="chapter-link">
+                            <div class="chapter-number">م</div>
+                            <div class="chapter-info">
+                                <div class="chapter-title">معجم المصطلحات</div>
+                                <div class="chapter-description">المصطلحات الاستثمارية الإنجليزية والعربية</div>
+                            </div>
+                            <i class="fas fa-arrow-left chapter-icon"></i>
+                        </a>
+                    </li>
+                    <li class="chapter-item">
+                        <a href="resources.html" class="chapter-link">
+                            <div class="chapter-number">ر</div>
+                            <div class="chapter-info">
+                                <div class="chapter-title">الموارد والمراجع</div>
+                                <div class="chapter-description">مواقع الإنترنت والمراجع الإضافية</div>
+                            </div>
+                            <i class="fas fa-arrow-left chapter-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation-buttons">
+            <a href="index.html" class="btn btn-outline-custom">
+                <i class="fas fa-home me-2"></i>الصفحة الرئيسية
+            </a>
+            <a href="preface.html" class="btn btn-custom">
+                <i class="fas fa-book me-2"></i>المقدمة
+            </a>
+            <a href="preface_second_edition.html" class="btn btn-custom">
+                <i class="fas fa-arrow-left me-2"></i>مقدمة الطبعة الثانية
+            </a>
+            <a href="introduction.html" class="btn btn-custom">
+                <i class="fas fa-info-circle me-2"></i>التمهيد
+            </a>
+            <a href="table_of_contents.html" class="btn btn-custom">
+                <i class="fas fa-arrow-left me-2"></i>جدول المحتويات
+            </a>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

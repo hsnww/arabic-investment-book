@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="الفصل الأول الجزء الأول: الاستثمار في الأسهم - لماذا تستثمر في الأسهم؟ فوائد ومخاطر الاستثمار، نمو رأس المال، الاستثمار عبر الإنترنت">
+    <meta name="keywords" content="الاستثمار في الأسهم, فوائد الاستثمار, مخاطر الاستثمار, نمو رأس المال, التداول عبر الإنترنت, الاستثمار للمبتدئين">
+    <title>الفصل الأول الجزء الأول: الاستثمار في الأسهم - المال والاستثمار في الأسواق المالية</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        
+        .chapter-container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin: 2rem auto;
+            max-width: 1000px;
+            overflow: hidden;
+        }
+        
+        .chapter-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        .chapter-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+        }
+        
+        .chapter-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .chapter-header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .chapter-content {
+            padding: 3rem 2rem;
+            line-height: 2;
+            font-size: 1.1rem;
+        }
+        
+        .chapter-content h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin: 2rem 0 1rem 0;
+            font-weight: 600;
+        }
+        
+        .chapter-content h3 {
+            color: #34495e;
+            margin: 1.5rem 0 1rem 0;
+            font-weight: 600;
+        }
+        
+        .chapter-content p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+        
+        .info-box {
+            background: #f8f9fa;
+            border-left: 5px solid #3498db;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .navigation-buttons {
+            background: #f8f9fa;
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        .btn-custom {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 0 0.5rem;
+        }
+        
+        .btn-custom:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+            color: white;
+        }
+        
+        .btn-outline-custom {
+            background: transparent;
+            border: 2px solid #667eea;
+            color: #667eea;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 0 0.5rem;
+        }
+        
+        .btn-outline-custom:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .stats-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .stat-item {
+            background: rgba(255,255,255,0.1);
+            padding: 1rem;
+            border-radius: 10px;
+        }
+        
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .questions-box {
+            background: #e8f4fd;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .questions-box h3 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+        }
+        
+        .questions-box ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .questions-box li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #d1ecf1;
+            position: relative;
+            padding-right: 2rem;
+        }
+        
+        .questions-box li:before {
+            content: '❓';
+            position: absolute;
+            right: 0;
+        }
+        
+        .questions-box li:last-child {
+            border-bottom: none;
+        }
+        
+        .part-indicator {
+            background: #28a745;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .chapter-header h1 {
+                font-size: 2rem;
+            }
+            
+            .chapter-content {
+                padding: 2rem 1rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="chapter-container">
+        <div class="chapter-header">
+            <h1><i class="fas fa-chart-line me-3"></i>الفصل الأول</h1>
+            <div class="subtitle">الاستثمار في الأسهم - الجزء الأول</div>
+            <div class="part-indicator">الجزء الأول من أربعة أجزاء</div>
+        </div>
+        
+        <div class="chapter-content">
+            <div class="highlight-box">
+                <h3><i class="fas fa-star me-2"></i>نظرة عامة على الفصل</h3>
+                <p>يغطي هذا الفصل المفاهيم الأساسية للاستثمار في الأسهم، بما في ذلك الفوائد والمخاطر، والتخطيط المالي، ومبادئ نمو رأس المال. الفصل مقسم إلى أربعة أجزاء لتيسير الفهم والاستيعاب.</p>
+            </div>
+            
+            <h2><i class="fas fa-question-circle me-2"></i>الأسئلة التي يجيب عليها هذا الفصل</h2>
+            <div class="questions-box">
+                <h3><i class="fas fa-list me-2"></i>الأسئلة الرئيسية</h3>
+                <ul>
+                    <li>لماذا تستثمر في الأسهم؟ وكيف ينمو رأس المال تبعاً لنسبة العائد السنوي؟</li>
+                    <li>هل من أمثلة لبعض الاستثمارات التي حققت عوائد عالية في السنوات الماضية؟</li>
+                    <li>ما فوائد الاستثمار في الأسهم وما مخاطره؟</li>
+                    <li>ما مخاطر الاستثمار عن طريق الإنترنت؟</li>
+                    <li>كيف يبدأ الشخص بالاستثمار؟ وهل من نصائح للمبتدئ؟</li>
+                </ul>
+            </div>
+            
+            <h2><i class="fas fa-lightbulb me-2"></i>مفهوم الاستثمار في الأسهم</h2>
+            <p>يكون الاستثمار في أسهم الشركات من أسهل الطرق المتاحة للمستثمر العادي للدخول في تجارة معينة دون قيامه بأداء العمل بنفسه. فهي على سبيل المثال تتيح للفرد أن يستثمر في شركة بترولية من غير أن يكون لديه معرفة فنية في مجال البترول ولا أن يقوم بالمتابعة اللصيقة لصناعة البترول وتجارته.</p>
+            
+            <div class="info-box">
+                <h4><i class="fas fa-info-circle me-2"></i>مثال عملي</h4>
+                <p>يتيح له الاستثمار في الأسهم أن يجني بعضاً من أرباح شركات الأدوية والتكنولوجيا وغيرها دون أن تكون له خبرة عملية في هذه المجالات. يوضح الجدول التالي العوائد المتحققة عن طريق الاستثمار لمدة طويلة في بعض الشركات الأمريكية.</p>
+            </div>
+            
+            <h2><i class="fas fa-chart-bar me-2"></i>أمثلة على العوائد العالية</h2>
+            <p>ومنها يتضح مدى العائد الذي يمكن تحقيقه عند اختيار السهم المناسب في الوقت المناسب والاحتفاظ به مدة كافية. على سبيل المثال نجد أن العائد لأسهم شركة سيسكو سيستمز (Cisco Systems) كان حوالي 30% في المتوسط لعدة سنوات. وهذا بلا شك يعتبر عائداً غير طبيعي، إلا أن من الممكن في كثير من الشركات تحقيق عوائد تتراوح ما بين 10% إلى 20% سنوياً.</p>
+            
+            <div class="stats-section">
+                <h3><i class="fas fa-chart-line me-2"></i>إحصائيات العوائد</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">30%</span>
+                        <span class="stat-label">متوسط عائد سيسكو سيستمز</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10-20%</span>
+                        <span class="stat-label">عائد سنوي طبيعي</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15%</span>
+                        <span class="stat-label">متوسط عائد مؤشر S&P</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">25%</span>
+                        <span class="stat-label">عائد وارن بافيت السنوي</span>
+                    </div>
+                </div>
+            </div>
+            
+            <h2><i class="fas fa-calculator me-2"></i>قوة النمو التراكمي</h2>
+            <p>بأي حال من الأحوال نجد أن مؤشر أس آند بي (S&P 500) قد حقق حوالي 15% سنوياً خلال التسعينات الميلادية. وكما سنرى لاحقاً أن رأس المال البالغ 10 آلاف دولار والذي ينمو بنسبة 15% سنوياً وبشكل تراكمي لمدة عشر سنوات يصل إلى ما فوق 40 ألف دولار في نهاية العشر سنوات.</p>
+            
+            <div class="info-box">
+                <h4><i class="fas fa-chart-area me-2"></i>مثال على النمو التراكمي</h4>
+                <p>فلو أنك استثمرت في الشركات نفسها التي يغطيها مؤشر S&P 500 خلال السنوات العشر الماضية، لاستطعت تحقيق العائد نفسه. طبعاً هناك العديد من المحترفين ممن حقق عوائد أكثر من ذلك على فترات زمنية طويلة.</p>
+            </div>
+            
+            <h2><i class="fas fa-crown me-2"></i>وارن بافيت: مثال على النجاح</h2>
+            <p>منهم على سبيل المثال الأسطوري وارن بافيت الذي حقق عائداً يقدر بنسبة 25% سنوياً لمدة أربعين عاماً، مما حقق له ثروة تفوق 10 بلايين دولار!</p>
+            
+            <div class="warning-box">
+                <h4><i class="fas fa-exclamation-triangle me-2"></i>ملاحظة مهمة</h4>
+                <p>هذه النسب العالية من العوائد لا تعني أن كل مستثمر يمكنه تحقيقها. إنها تتطلب مهارات خاصة، ومعرفة عميقة، ووقت طويل، وحظاً جيداً. لكنها تثبت أن الاستثمار في الأسهم يمكن أن يكون وسيلة فعالة لبناء الثروة على المدى الطويل.</p>
+            </div>
+            
+            <h2><i class="fas fa-list-ol me-2"></i>أجزاء الفصل</h2>
+            <p>هذا الفصل مقسم إلى أربعة أجزاء لتيسير الفهم والاستيعاب:</p>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="info-box">
+                        <h4><i class="fas fa-1 me-2"></i>الجزء الأول (هذه الصفحة)</h4>
+                        <ul>
+                            <li>نظرة عامة على الفصل</li>
+                            <li>الأسئلة الرئيسية</li>
+                            <li>مفهوم الاستثمار في الأسهم</li>
+                            <li>أمثلة على العوائد العالية</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-box">
+                        <h4><i class="fas fa-2 me-2"></i>الجزء الثاني</h4>
+                        <ul>
+                            <li>فوائد الاستثمار في الأسهم</li>
+                            <li>فوائد الاستثمار عبر الإنترنت</li>
+                            <li>المعلومات المالية المتاحة</li>
+                            <li>تكلفة التداول المنخفضة</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-box">
+                        <h4><i class="fas fa-3 me-2"></i>الجزء الثالث</h4>
+                        <ul>
+                            <li>مخاطر الاستثمار في الأسهم</li>
+                            <li>مخاطر الاستثمار عبر الإنترنت</li>
+                            <li>طرق الاحتيال والاحتياطات</li>
+                            <li>الأمان في التداول الإلكتروني</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-box">
+                        <h4><i class="fas fa-4 me-2"></i>الجزء الرابع</h4>
+                        <ul>
+                            <li>نصائح للمستثمر المبتدئ</li>
+                            <li>طرق الاستثمار المختلفة</li>
+                            <li>صناديق الاستثمار</li>
+                            <li>الخلاصة والتوصيات</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="navigation-buttons">
+            <a href="index.html" class="btn btn-outline-custom">
+                <i class="fas fa-home me-2"></i>الصفحة الرئيسية
+            </a>
+            <a href="table_of_contents.html" class="btn btn-outline-custom">
+                <i class="fas fa-list me-2"></i>جدول المحتويات
+            </a>
+            <a href="chapter1_part2.html" class="btn btn-custom">
+                <i class="fas fa-arrow-right me-2"></i>الجزء الثاني
+            </a>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
