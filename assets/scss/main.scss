@@ -1,0 +1,496 @@
+// Main SCSS file for the Investment Book website
+// الملف الرئيسي لـ SCSS لموقع كتاب الاستثمار
+
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2c3e50;
+$success-color: #28a745;
+$warning-color: #ffc107;
+$danger-color: #dc3545;
+$info-color: #17a2b8;
+$light-color: #f8f9fa;
+$dark-color: #343a40;
+
+$font-family-arabic: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$line-height-base: 1.8;
+$border-radius: 10px;
+$box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+// Mixins
+@mixin card-style {
+    background: white;
+    padding: 2rem;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    margin: 2rem 0;
+}
+
+@mixin section-title {
+    color: $secondary-color;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+@mixin highlight-box($bg-color, $border-color) {
+    background-color: $bg-color;
+    padding: 1rem;
+    border-left: 4px solid $border-color;
+    margin: 1rem 0;
+    border-radius: 4px;
+}
+
+// Base styles
+body {
+    font-family: $font-family-arabic;
+    line-height: $line-height-base;
+    background-color: $light-color;
+    direction: rtl;
+    text-align: right;
+}
+
+// Chapter content
+.chapter-content {
+    @include card-style;
+}
+
+.chapter-title {
+    color: $secondary-color;
+    border-bottom: 3px solid $primary-color;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    @include section-title;
+}
+
+// Navigation
+.navigation-buttons {
+    margin: 2rem 0;
+}
+
+.btn-navigation {
+    margin: 0.5rem;
+    min-width: 120px;
+}
+
+// Table of contents
+.table-of-contents {
+    background: #ecf0f1;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.toc-item {
+    margin: 0.5rem 0;
+    
+    a {
+        color: $secondary-color;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        
+        &:hover {
+            color: $primary-color;
+        }
+        
+        &.active {
+            color: $primary-color;
+            font-weight: bold;
+        }
+    }
+}
+
+// Highlight boxes
+.highlight {
+    @include highlight-box(#fff3cd, $warning-color);
+}
+
+.important-note {
+    @include highlight-box(#d1ecf1, $info-color);
+}
+
+.warning-note {
+    @include highlight-box(#f8d7da, $danger-color);
+}
+
+.example-box {
+    @include highlight-box(#e8f5e8, $success-color);
+}
+
+// Footer
+.footer {
+    background-color: $secondary-color;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    
+    a {
+        color: $primary-color;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        
+        &:hover {
+            color: lighten($primary-color, 15%);
+        }
+    }
+}
+
+// Navigation bar
+.navbar {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    
+    .navbar-brand {
+        font-weight: bold;
+        color: $primary-color !important;
+    }
+    
+    .nav-link {
+        transition: color 0.3s ease;
+        
+        &:hover {
+            color: $primary-color !important;
+        }
+        
+        &.active {
+            color: $primary-color !important;
+            font-weight: bold;
+        }
+    }
+}
+
+// Cards
+.card {
+    border: none;
+    box-shadow: $box-shadow;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+    
+    .card-title {
+        color: $secondary-color;
+        font-weight: 600;
+    }
+}
+
+// Buttons
+.btn {
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+}
+
+// Back to top button
+.back-to-top {
+    transition: all 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+}
+
+// Print styles
+@media print {
+    .navbar,
+    .footer,
+    .navigation-buttons,
+    .back-to-top {
+        display: none !important;
+    }
+    
+    .chapter-content {
+        box-shadow: none !important;
+        margin: 0 !important;
+        padding: 20px !important;
+    }
+    
+    body {
+        background: white !important;
+        font-size: 12pt !important;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+    }
+    
+    .highlight,
+    .important-note,
+    .warning-note,
+    .example-box {
+        page-break-inside: avoid;
+    }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+    .chapter-content {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+    
+    .btn-navigation {
+        min-width: 100px;
+        font-size: 0.9rem;
+    }
+    
+    .table-of-contents {
+        padding: 1rem;
+    }
+    
+    .footer {
+        padding: 1rem 0;
+        
+        .row {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .chapter-title {
+        font-size: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.2rem;
+    }
+    
+    .btn-navigation {
+        display: block;
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
+
+// Dark mode support (if needed)
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #ffffff;
+    }
+    
+    .chapter-content {
+        background: #2d2d2d;
+        color: #ffffff;
+    }
+    
+    .table-of-contents {
+        background: #3d3d3d;
+        color: #ffffff;
+    }
+    
+    .card {
+        background: #2d2d2d;
+        color: #ffffff;
+    }
+}
+
+// Accessibility improvements
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+// Focus styles for accessibility
+.btn:focus,
+.nav-link:focus,
+a:focus {
+    outline: 2px solid $primary-color;
+    outline-offset: 2px;
+}
+
+// High contrast mode
+@media (prefers-contrast: high) {
+    .highlight {
+        border-left-width: 6px;
+    }
+    
+    .important-note {
+        border-left-width: 6px;
+    }
+    
+    .warning-note {
+        border-left-width: 6px;
+    }
+    
+    .example-box {
+        border-left-width: 6px;
+    }
+}
+
+// Table of Contents Styles
+.toc-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-right: 5px solid #007bff;
+}
+
+.toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc-list li {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.toc-list li:last-child {
+    border-bottom: none;
+}
+
+.toc-list a {
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.toc-list a:hover {
+    background: #f8f9fa;
+    color: #007bff;
+    transform: translateX(-5px);
+}
+
+.toc-list i {
+    color: #007bff;
+    width: 20px;
+}
+
+// Chapter Navigation Styles
+.chapter-navigation {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.chapter-progress {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.progress-bar {
+    height: 8px;
+    border-radius: 4px;
+}
+
+// Content Boxes
+.highlight-box {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-right: 5px solid #ff6b6b;
+}
+
+.info-box {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-right: 5px solid #007bff;
+}
+
+.warning-box {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-right: 5px solid #ffc107;
+}
+
+.formula-box {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-left: 5px solid #007bff;
+    font-family: 'Courier New', monospace;
+}
+
+.questions-box {
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-right: 5px solid #6f42c1;
+}
+
+// Stats Section
+.stats-section {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 2px solid #e9ecef;
+}
+
+.stat-number {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    display: block;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .toc-section {
+        padding: 1rem;
+    }
+    
+    .chapter-navigation {
+        padding: 1rem;
+    }
+} 

@@ -162,9 +162,9 @@
   
   // Code Actions
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.organizeImports": true
-  },
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+},
   
   // Breadcrumbs
   "breadcrumbs.enabled": true,
@@ -207,5 +207,7 @@
   // Smooth Scrolling
   "editor.smoothScrolling": true,
   "workbench.list.smoothScrolling": true,
-  "terminal.integrated.smoothScrolling": true
+"terminal.integrated.smoothScrolling": true,
+"containers.commands.build": "docker build -t ${imageName} .",
+"containers.commands.run": "docker run -d -p ${exposedPort}:${containerPort} ${imageName}"
 } 

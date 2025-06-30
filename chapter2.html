@@ -1,551 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="الفصل الثاني: التخطيط المالي والميزانية الشخصية - أساسيات التخطيط المالي، تكوين الثروة، إدارة الأموال الشخصية">
-    <meta name="keywords" content="التخطيط المالي, الميزانية الشخصية, تكوين الثروة, إدارة الأموال, التخطيط المالي الشخصي, الاستقلال المالي">
-    <meta name="author" content="الدكتور فهد الحويماني">
-    <title>الفصل الثاني: التخطيط المالي والميزانية الشخصية - المال والاستثمار في الأسواق المالية</title>
-    <!-- Google Analytics -->
-    <script src="js/analytics.js"></script>
-    
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            min-height: 100vh;
-        }
-        
-        .chapter-container {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            margin: 2rem auto;
-            max-width: 1000px;
-            overflow: hidden;
-        }
-        
-        .chapter-header {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-            color: white;
-            padding: 3rem 2rem;
-            text-align: center;
-            position: relative;
-        }
-        
-        .chapter-header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-        }
-        
-        .chapter-header h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .chapter-header .subtitle {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .chapter-content {
-            padding: 3rem 2rem;
-            line-height: 2;
-            font-size: 1.1rem;
-        }
-        
-        .chapter-content h2 {
-            color: #2c3e50;
-            border-bottom: 3px solid #ff6b6b;
-            padding-bottom: 0.5rem;
-            margin: 2rem 0 1rem 0;
-            font-weight: 600;
-        }
-        
-        .chapter-content h3 {
-            color: #34495e;
-            margin: 1.5rem 0 1rem 0;
-            font-weight: 600;
-        }
-        
-        .chapter-content p {
-            margin-bottom: 1.5rem;
-            text-align: justify;
-            text-justify: inter-word;
-        }
-        
-        .highlight-box {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-            color: white;
-            padding: 2rem;
-            border-radius: 15px;
-            margin: 2rem 0;
-            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
-        }
-        
-        .info-box {
-            background: #f8f9fa;
-            border-left: 5px solid #17a2b8;
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 0 10px 10px 0;
-        }
-        
-        .warning-box {
-            background: #fff3cd;
-            border-left: 5px solid #ffc107;
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 0 10px 10px 0;
-        }
-        
-        .success-box {
-            background: #d4edda;
-            border-left: 5px solid #28a745;
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 0 10px 10px 0;
-        }
-        
-        .concepts-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-        
-        .concept-card {
-            background: white;
-            border: 1px solid #e9ecef;
-            border-radius: 15px;
-            padding: 1.5rem;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-            transition: all 0.3s ease;
-        }
-        
-        .concept-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-        }
-        
-        .concept-card h4 {
-            color: #ff6b6b;
-            margin-bottom: 1rem;
-            font-weight: 600;
-        }
-        
-        .concept-card ul {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .concept-card li {
-            padding: 0.5rem 0;
-            border-bottom: 1px solid #f1f3f4;
-            position: relative;
-            padding-right: 1.5rem;
-        }
-        
-        .concept-card li:before {
-            content: '💡';
-            position: absolute;
-            right: 0;
-        }
-        
-        .concept-card li:last-child {
-            border-bottom: none;
-        }
-        
-        .navigation-buttons {
-            background: #f8f9fa;
-            padding: 2rem;
-            text-align: center;
-            border-top: 1px solid #e9ecef;
-        }
-        
-        .btn-custom {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-            border: none;
-            color: white;
-            padding: 0.75rem 2rem;
-            border-radius: 50px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            margin: 0 0.5rem;
-        }
-        
-        .btn-custom:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(255, 107, 107, 0.4);
-            color: white;
-        }
-        
-        .btn-outline-custom {
-            background: transparent;
-            border: 2px solid #ff6b6b;
-            color: #ff6b6b;
-            padding: 0.75rem 2rem;
-            border-radius: 50px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            margin: 0 0.5rem;
-        }
-        
-        .btn-outline-custom:hover {
-            background: #ff6b6b;
-            color: white;
-            transform: translateY(-2px);
-        }
-        
-        .stats-section {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-            color: white;
-            padding: 2rem;
-            border-radius: 15px;
-            margin: 2rem 0;
-            text-align: center;
-        }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin-top: 1.5rem;
-        }
-        
-        .stat-item {
-            background: rgba(255,255,255,0.1);
-            padding: 1rem;
-            border-radius: 10px;
-        }
-        
-        .stat-number {
-            font-size: 1.5rem;
-            font-weight: bold;
-            display: block;
-        }
-        
-        .stat-label {
-            font-size: 0.9rem;
-            opacity: 0.9;
-        }
-        
-        .questions-box {
-            background: #e8f4fd;
-            border-radius: 15px;
-            padding: 2rem;
-            margin: 2rem 0;
-        }
-        
-        .questions-box h3 {
-            color: #2c3e50;
-            margin-bottom: 1.5rem;
-        }
-        
-        .questions-box ul {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .questions-box li {
-            padding: 0.75rem 0;
-            border-bottom: 1px solid #d1ecf1;
-            position: relative;
-            padding-right: 2rem;
-        }
-        
-        .questions-box li:before {
-            content: '❓';
-            position: absolute;
-            right: 0;
-        }
-        
-        .questions-box li:last-child {
-            border-bottom: none;
-        }
-        
-        .example-box {
-            background: #f8f9fa;
-            border: 2px solid #dee2e6;
-            border-radius: 15px;
-            padding: 2rem;
-            margin: 2rem 0;
-        }
-        
-        .example-box h4 {
-            color: #ff6b6b;
-            margin-bottom: 1rem;
-        }
-        
-        @media (max-width: 768px) {
-            .chapter-header h1 {
-                font-size: 2rem;
-            }
-            
-            .chapter-content {
-                padding: 2rem 1rem;
-            }
-            
-            .concepts-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .stats-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="chapter-container">
-        <div class="chapter-header">
-            <h1><i class="fas fa-calculator me-3"></i>الفصل الثاني</h1>
-            <div class="subtitle">التخطيط المالي والميزانية الشخصية</div>
-        </div>
-        
-        <div class="chapter-content">
-            <div class="highlight-box">
-                <h3><i class="fas fa-star me-2"></i>نظرة عامة على الفصل</h3>
-                <p>يغطي هذا الفصل المفاهيم الأساسية للتخطيط المالي الشخصي، وأهميته في تحقيق الأهداف المالية، وكيفية بناء الثروة من خلال التخطيط السليم والاستثمار المناسب.</p>
-            </div>
-            
-            <h2><i class="fas fa-question-circle me-2"></i>الأسئلة التي يجيب عليها هذا الفصل</h2>
-            <div class="questions-box">
-                <h3><i class="fas fa-list me-2"></i>الأسئلة الرئيسية</h3>
-                <ul>
-                    <li>ما المقصود بالتخطيط المالي؟</li>
-                    <li>هل نحتاج للتخطيط المالي كأفراد؟</li>
-                    <li>هل من الممكن أن يصبح الشخص مليونيراً؟</li>
-                    <li>ما نسبة العائد على أنواع مختلفة من الوسائل الاستثمارية؟</li>
-                </ul>
-            </div>
-            
-            <h2><i class="fas fa-lightbulb me-2"></i>أهمية التخطيط المالي</h2>
-            <p>قد يبدو التخطيط المالي أمراً معقداً للشخص غير المتخصص، حيث قد يعتقد أن مثل هذه الأمور تمارس فقط من قبل المؤسسات وكبار المحترفين. ولكن الواقع الذي نعيشه اليوم يفرض علينا عكس ذلك تماماً.</p>
-            
-            <div class="info-box">
-                <h4><i class="fas fa-info-circle me-2"></i>ضرورة التخطيط المالي</h4>
-                <p>إن من الضروري جداً إيجاد خطة مالية للفرد تحتوي على ميزانية سنوية تحدد الدخل المتوقع لذلك العام والمصروفات المتوقعة. ويجب على الفرد التصرف بحدود ما تمليه عليه الميزانية، تماماً كما هو الحال في المنشآت التجارية والحكومية.</p>
-            </div>
-            
-            <h2><i class="fas fa-home me-2"></i>الحاجة إلى التخطيط المالي</h2>
-            <p>إن الحاجة إلى التخطيط المالي تأتي بسبب متطلبات الحياة المختلفة. فنحن جميعاً بحاجة إلى تأمين مسكن ملائم لنا ولأسرتنا، ونحن بحاجة لسيارة نقودها، إضافة إلى المأكل والمشرب وغيرها من المتطلبات اليومية.</p>
-            
-            <div class="concepts-grid">
-                <div class="concept-card">
-                    <h4><i class="fas fa-graduation-cap me-2"></i>التعليم والثقافة</h4>
-                    <ul>
-                        <li>المدارس الخاصة</li>
-                        <li>الجامعات المحلية والخارجية</li>
-                        <li>التعليم العالي</li>
-                        <li>التطوير المهني</li>
-                    </ul>
-                </div>
-                
-                <div class="concept-card">
-                    <h4><i class="fas fa-heartbeat me-2"></i>الرعاية الصحية</h4>
-                    <ul>
-                        <li>أرقى درجات العلاج</li>
-                        <li>التأمين الصحي</li>
-                        <li>الرعاية الوقائية</li>
-                        <li>العلاج المتخصص</li>
-                    </ul>
-                </div>
-                
-                <div class="concept-card">
-                    <h4><i class="fas fa-piggy-bank me-2"></i>التقاعد والاستقلال</h4>
-                    <ul>
-                        <li>جمع مبلغ للتقاعد</li>
-                        <li>الاستقلال المالي</li>
-                        <li>تجنب الاعتماد على الآخرين</li>
-                        <li>الدخل المستمر</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <h2><i class="fas fa-exclamation-triangle me-2"></i>مشكلة معاش التقاعد</h2>
-            <p>كذلك يجب أن ندرك أن معاش التقاعد سواء كان عن طريق جهة حكومية أو جهة خاصة قد لا يفي بالتزامات الشخص بشكل جيد. ويجب ألا نغفل تأثير تضخم الأسعار على معاش التقاعد.</p>
-            
-            <div class="warning-box">
-                <h4><i class="fas fa-chart-line me-2"></i>مثال على تأثير التضخم</h4>
-                <p>فإذا كان مقرراً لشخص صرف مرتب شهري يساوي 1000 دولار بعد 10 سنوات وكانت نسبة التضخم 5% سنوياً، فإن المرتب الحقيقي بعد 10 سنوات هو مجرد 614 دولاراً شهرياً. وقد كانت نسبة التضخم في بلدان عربية كثيرة في السنوات الأخيرة أكثر من 10% سنوياً.</p>
-            </div>
-            
-            <h2><i class="fas fa-cogs me-2"></i>مبادئ التخطيط المالي</h2>
-            <p>هناك العديد من الكتب التي تتطرق للتخطيط المالي من جميع أبعاده، وهناك الأخصائيون في هذا المجال الذين يطلق عليهم المخططون الماليون (Financial Planners) ممن يقوم بمساعدة الفرد في كيفية التخطيط السليم.</p>
-            
-            <div class="concepts-grid">
-                <div class="concept-card">
-                    <h4><i class="fas fa-bullseye me-2"></i>تحديد الأهداف المالية</h4>
-                    <ul>
-                        <li>بناء منزل خلال 10 سنوات</li>
-                        <li>جمع مبلغ للجامعة بعد 5 سنوات</li>
-                        <li>توفير دخل للتقاعد</li>
-                        <li>التغطية الصحية الكاملة</li>
-                    </ul>
-                </div>
-                
-                <div class="concept-card">
-                    <h4><i class="fas fa-calculator me-2"></i>حساب رأس المال</h4>
-                    <ul>
-                        <li>جمع قيمة الممتلكات</li>
-                        <li>خصم الديون والالتزامات</li>
-                        <li>حساب الثروة الشخصية</li>
-                        <li>متابعة سنوية للوضع المالي</li>
-                    </ul>
-                </div>
-                
-                <div class="concept-card">
-                    <h4><i class="fas fa-chart-pie me-2"></i>الميزانية السنوية</h4>
-                    <ul>
-                        <li>جرد مصادر الدخل</li>
-                        <li>إحصاء المصروفات</li>
-                        <li>حساب صافي الادخار</li>
-                        <li>تنمية رأس المال</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <h2><i class="fas fa-dollar-sign me-2"></i>هل يمكن أن تصبح مليونيراً؟</h2>
-            <p>هل هناك طريقة عملية وممكنة للشخص أن يصبح مليونيراً؟ هل بالفعل هناك طرق معينة تمكّن الشخص من تحقيق طموحاته وأهدافه المستقبلية بما في ذلك الاستقلالية المالية الكاملة؟</p>
-            
-            <div class="example-box">
-                <h4><i class="fas fa-question-circle me-2"></i>مثال عملي: جمع مليون دولار</h4>
-                <p><strong>السؤال:</strong> إذا كنت ترغب بجمع مبلغ مليون دولار بعد عشر سنوات من الآن، فكم يجب عليك أن تدخر في كل عام؟</p>
-                
-                <div class="stats-section">
-                    <h3><i class="fas fa-chart-bar me-2"></i>مقارنة طرق الادخار</h3>
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <span class="stat-number">$100,000</span>
-                            <span class="stat-label">سنوياً بدون استثمار</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">$75,000</span>
-                            <span class="stat-label">سنوياً بعائد 5%</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">$50,000</span>
-                            <span class="stat-label">سنوياً بعائد 10%</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">$30,000</span>
-                            <span class="stat-label">سنوياً بعائد 15%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <h2><i class="fas fa-chart-line me-2"></i>العلاقة بين العائد والمخاطرة</h2>
-            <p>إذاً فالمسألة هي كيفية اختيار الوسيلة الاستثمارية المناسبة لتحقيق العائد المطلوب. وهذا بالطبع من أصعب الأمور التي تواجه المستثمر. فكلما زادت نسبة العائد المتوقع، زادت نسبة المخاطرة.</p>
-            
-            <div class="concepts-grid">
-                <div class="concept-card">
-                    <h4><i class="fas fa-shield-alt me-2"></i>استثمارات منخفضة المخاطر</h4>
-                    <ul>
-                        <li>الحساب الجاري: 0% عائد</li>
-                        <li>أذونات الخزينة: 3-5% عائد</li>
-                        <li>السندات الحكومية: 4-6% عائد</li>
-                        <li>شهادات الإيداع: 5-7% عائد</li>
-                    </ul>
-                </div>
-                
-                <div class="concept-card">
-                    <h4><i class="fas fa-chart-bar me-2"></i>استثمارات متوسطة المخاطر</h4>
-                    <ul>
-                        <li>سندات الشركات: 6-8% عائد</li>
-                        <li>صناديق الأسهم: 8-12% عائد</li>
-                        <li>الأسهم المتنوعة: 10-15% عائد</li>
-                        <li>الأسهم النامية: 12-20% عائد</li>
-                    </ul>
-                </div>
-                
-                <div class="concept-card">
-                    <h4><i class="fas fa-fire me-2"></i>استثمارات عالية المخاطر</h4>
-                    <ul>
-                        <li>عقود الخيارات: عائد متغير</li>
-                        <li>السلع الآجلة: عائد عالي</li>
-                        <li>الأسهم الفردية: عائد متغير</li>
-                        <li>اليانصيب: عائد ضئيل</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <h2><i class="fas fa-rocket me-2"></i>قوة النمو التراكمي</h2>
-            <p>إن القوة التراكمية لنمو رأس المال شيء عجيب حقاً، وعلى المستثمر والمضارب الجاد إدراك هذا الجانب والبدء في التخطيط السليم للوصول إلى المبلغ المطلوب.</p>
-            
-            <div class="success-box">
-                <h4><i class="fas fa-chart-area me-2"></i>مثال على النمو التراكمي</h4>
-                <p>لو أن شخصاً استطاع أن ينمي رأس ماله بنسبة 15% بشكل تراكمي في كل عام، فإن رأس المال يتضاعف حوالي 4 مرات بعد مرور 10 سنوات! ويصل إلى حوالي 10 أضعاف لو كانت النسبة التراكمية 25% سنوياً.</p>
-            </div>
-            
-            <h2><i class="fas fa-clipboard-check me-2"></i>الخلاصة والتوصيات</h2>
-            <p>تذكر دائماً أن التخطيط المالي ضروري جداً بغض النظر عن مقدار ثروتك الحالية. ذلك لأن التخطيط المالي في نهاية المطاف هو طريقة منظمة لتحقيق الأهداف المالية والاستثمارية أيا كانت، كبيرة أم صغيرة.</p>
-            
-            <div class="highlight-box">
-                <h3><i class="fas fa-lightbulb me-2"></i>النقاط الرئيسية</h3>
-                <ul>
-                    <li>التخطيط المالي ضروري للجميع وليس للمؤسسات فقط</li>
-                    <li>يجب تحديد الأهداف المالية بوضوح وكتابتها</li>
-                    <li>حساب رأس المال ومتابعته سنوياً</li>
-                    <li>إعداد ميزانية سنوية ومراقبة المصروفات</li>
-                    <li>اختيار وسائل الاستثمار المناسبة حسب المخاطرة</li>
-                    <li>الاستفادة من قوة النمو التراكمي</li>
-                    <li>تجنب الأموال الراكدة التي لا تحقق عائداً</li>
-                </ul>
-            </div>
-            
-            <div class="info-box">
-                <h4><i class="fas fa-book me-2"></i>معلومات الفصل</h4>
-                <div class="row">
-                    <div class="col-md-6">
-                        <ul>
-                            <li><strong>عدد الصفحات:</strong> 8 صفحات</li>
-                            <li><strong>عدد الكلمات:</strong> 2,059 كلمة</li>
-                            <li><strong>عدد الأحرف:</strong> 11,708 حرف</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <ul>
-                            <li><strong>الموضوع الرئيسي:</strong> التخطيط المالي الشخصي</li>
-                            <li><strong>الهدف:</strong> تحقيق الاستقلال المالي</li>
-                            <li><strong>الطريقة:</strong> التخطيط المنظم والاستثمار السليم</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="navigation-buttons">
-            <a href="index.html" class="btn btn-outline-custom">
-                <i class="fas fa-home me-2"></i>الصفحة الرئيسية
-            </a>
-            <a href="toc.html" class="btn btn-outline-custom">
-                <i class="fas fa-list me-2"></i>جدول المحتويات
-            </a>
-            <a href="chapter1_part1.html" class="btn btn-outline-custom">
-                <i class="fas fa-arrow-left me-2"></i>الفصل الأول
-            </a>
-            <a href="table_of_contents.html" class="btn btn-custom">
-                <i class="fas fa-arrow-right me-2"></i>الفصل التالي
-            </a>
-        </div>
-    </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html> 

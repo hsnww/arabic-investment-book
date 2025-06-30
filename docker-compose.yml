@@ -1,0 +1,105 @@
+version: '3.8'
+
+services:
+  # PHP Development Server
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: investment-book-app
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+      - ./logs:/var/www/html/logs
+      - ./cache:/var/www/html/cache
+    environment:
+      - PHP_MEMORY_LIMIT=512M
+      - PHP_MAX_EXECUTION_TIME=300
+      - PHP_UPLOAD_MAX_FILESIZE=50M
+      - PHP_POST_MAX_SIZE=50M
+    networks:
+      - investment-book-network
+    depends_on:
+      - mysql
+
+  # MySQL Database (for future features)
+  mysql:
+    image: mysql:8.0
+    container_name: investment-book-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: investment_book
+      MYSQL_USER: bookuser
+      MYSQL_PASSWORD: bookpass
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./docker/mysql/init:/docker-entrypoint-initdb.d
+    networks:
+      - investment-book-network
+
+  # phpMyAdmin (for database management)
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: investment-book-phpmyadmin
+    restart: unless-stopped
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      PMA_USER: root
+      PMA_PASSWORD: rootpassword
+    networks:
+      - investment-book-network
+    depends_on:
+      - mysql
+
+  # Redis (for caching)
+  redis:
+    image: redis:7-alpine
+    container_name: investment-book-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - investment-book-network
+
+  # MailHog (for email testing)
+  mailhog:
+    image: mailhog/mailhog
+    container_name: investment-book-mailhog
+    restart: unless-stopped
+    ports:
+      - "1025:1025"  # SMTP
+      - "8025:8025"  # Web UI
+    networks:
+      - investment-book-network
+
+  # Node.js (for frontend development)
+  node:
+    image: node:18-alpine
+    container_name: investment-book-node
+    working_dir: /var/www/html
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "3000:3000"
+    command: sh -c "npm install && npm run dev"
+    networks:
+      - investment-book-network
+
+volumes:
+  mysql_data:
+    driver: local
+  redis_data:
+    driver: local
+
+networks:
+  investment-book-network:
+    driver: bridge 
