@@ -1,0 +1,211 @@
+{
+  // PHP Settings
+  "php.validate.enable": true,
+  "php.suggest.basic": false,
+  "php.executablePath": "php",
+  "phpcs.standard": "PSR12",
+  "phpcs.executablePath": "vendor/bin/phpcs",
+  "phpcbf.executablePath": "vendor/bin/phpcbf",
+  
+  // Editor Settings
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.wordWrap": "on",
+  "editor.rulers": [80, 120],
+  "editor.minimap.enabled": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  
+  // File Associations
+  "files.associations": {
+    "*.php": "php",
+    "*.scss": "scss",
+    "*.sass": "sass",
+    "*.js": "javascript",
+    "*.json": "json",
+    "*.yml": "yaml",
+    "*.yaml": "yaml",
+    "*.md": "markdown",
+    "*.html": "html",
+    "*.css": "css",
+    "Makefile": "makefile",
+    "Dockerfile": "dockerfile"
+  },
+  
+  // Search Settings
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/vendor": true,
+    "**/logs": true,
+    "**/cache": true,
+    "**/dist": true,
+    "**/.git": true,
+    "**/coverage": true
+  },
+  
+  // Files Settings
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/vendor": true,
+    "**/logs": true,
+    "**/cache": true,
+    "**/dist": true,
+    "**/.git": true,
+    "**/coverage": true,
+    "**/*.log": true,
+    "**/*.cache": true
+  },
+  
+  // Terminal Settings
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "args": ["-NoExit", "-Command", "cd '${workspaceFolder}'"]
+    }
+  },
+  
+  // Git Settings
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  
+  // Prettier Settings
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  "prettier.printWidth": 80,
+  "prettier.tabWidth": 4,
+  "prettier.useTabs": false,
+  "prettier.semi": true,
+  
+  // ESLint Settings
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.workingDirectories": ["."],
+  
+  // Docker Settings
+  "docker.showStartPage": false,
+  "docker.commands.build": "docker build -t ${imageName} .",
+  "docker.commands.run": "docker run -d -p ${exposedPort}:${containerPort} ${imageName}",
+  
+  // SCSS Settings
+  "scss.validate": true,
+  "scss.lint.unknownVendorSpecificProperties": "ignore",
+  
+  // Markdown Settings
+  "markdown.preview.breaks": true,
+  "markdown.preview.fontSize": 14,
+  "markdown.preview.lineHeight": 1.6,
+  
+  // Language Specific Settings
+  "[php]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "junstyle.php-cs-fixer"
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  
+  // IntelliSense Settings
+  "typescript.suggest.autoImports": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  
+  // Emmet Settings
+  "emmet.includeLanguages": {
+    "php": "html",
+    "javascript": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  
+  // Workbench Settings
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Material Theme",
+  "workbench.startupEditor": "newUntitledFile",
+  
+  // Explorer Settings
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  
+  // Auto Save
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  
+  // Code Actions
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true
+  },
+  
+  // Breadcrumbs
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.showFiles": true,
+  "breadcrumbs.showSymbols": true,
+  
+  // Minimap
+  "editor.minimap.enabled": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.maxColumn": 120,
+  
+  // Folding
+  "editor.foldingStrategy": "indentation",
+  "editor.showFoldingControls": "always",
+  
+  // Word Wrap
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 80,
+  
+  // Line Numbers
+  "editor.lineNumbers": "on",
+  "editor.renderLineHighlight": "all",
+  
+  // Cursor
+  "editor.cursorBlinking": "blink",
+  "editor.cursorSmoothCaretAnimation": "on",
+  
+  // Selection
+  "editor.multiCursorModifier": "alt",
+  "editor.selectionHighlight": true,
+  
+  // Whitespace
+  "editor.renderWhitespace": "boundary",
+  "editor.trimAutoWhitespace": true,
+  
+  // Indent Guides
+  "editor.guides.indentation": true,
+  "editor.guides.bracketPairs": true,
+  
+  // Smooth Scrolling
+  "editor.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true
+} 

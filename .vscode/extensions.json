@@ -1,0 +1,57 @@
+{
+  "recommendations": [
+    // PHP Development
+    "bmewburn.vscode-intelephense-client",
+    "xdebug.php-debug",
+    "neilbrayfield.php-docblocker",
+    "junstyle.php-cs-fixer",
+    "MehediDracula.php-namespace-resolver",
+    "mikestead.dotenv",
+    
+    // Frontend Development
+    "bradlc.vscode-tailwindcss",
+    "esbenp.prettier-vscode",
+    "ms-vscode.vscode-typescript-next",
+    "formulahendry.auto-rename-tag",
+    "formulahendry.auto-close-tag",
+    "christian-kohler.path-intellisense",
+    "ms-vscode.vscode-json",
+    
+    // SCSS/CSS
+    "syler.sass-indented",
+    "bradlc.vscode-tailwindcss",
+    "ms-vscode.vscode-css-peek",
+    
+    // Docker & DevOps
+    "ms-azuretools.vscode-docker",
+    "ms-vscode.makefile-tools",
+    "ms-vscode-remote.remote-containers",
+    
+    // Git & Version Control
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    
+    // Code Quality
+    "streetsidesoftware.code-spell-checker",
+    "ms-vscode.vscode-eslint",
+    "ms-vscode.vscode-json",
+    
+    // Productivity
+    "ms-vscode.vscode-json",
+    "redhat.vscode-yaml",
+    "ms-vscode.vscode-markdown",
+    "yzhang.markdown-all-in-one",
+    
+    // Themes & Icons
+    "pkief.material-icon-theme",
+    "zhuangtongfa.material-theme",
+    
+    // Arabic Language Support
+    "ms-vscode.vscode-json",
+    "ms-vscode.vscode-typescript-next"
+  ],
+  "unwantedRecommendations": [
+    "ms-vscode.vscode-typescript",
+    "ms-vscode.vscode-javascript"
+  ]
+} 
