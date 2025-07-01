@@ -18,6 +18,7 @@ class InvestmentBook {
         this.initializeComponents();
         this.setupScrollEffects();
         this.setupPrintStyles();
+        this.setupMobileFixes();
     }
 
     setupEventListeners() {
@@ -178,6 +179,53 @@ class InvestmentBook {
                 document.body.classList.remove('dropdown-open');
             });
         }
+    }
+
+    setupMobileFixes() {
+        // Prevent horizontal scroll and page shift on mobile
+        const preventHorizontalScroll = () => {
+            // Force scroll to center if there's any horizontal offset
+            if (window.scrollX !== 0) {
+                window.scrollTo(0, window.scrollY);
+            }
+
+            // Ensure body stays centered
+            document.body.style.transform = 'translateX(0)';
+        };
+
+        // Apply fixes on page load
+        preventHorizontalScroll();
+
+        // Apply fixes on orientation change
+        window.addEventListener('orientationchange', () => {
+            setTimeout(preventHorizontalScroll, 100);
+        });
+
+        // Apply fixes on resize
+        window.addEventListener('resize', () => {
+            setTimeout(preventHorizontalScroll, 100);
+        });
+
+        // Apply fixes on scroll
+        window.addEventListener('scroll', () => {
+            if (window.scrollX !== 0) {
+                window.scrollTo(0, window.scrollY);
+            }
+        });
+
+        // Prevent touch events from causing horizontal scroll
+        document.addEventListener(
+            'touchmove',
+            (e) => {
+                if (e.touches.length === 1) {
+                    const touch = e.touches[0];
+                    if (Math.abs(touch.clientX - touch.screenX) > 10) {
+                        e.preventDefault();
+                    }
+                }
+            },
+            { passive: false }
+        );
     }
 
     handleSmoothScroll(event) {
