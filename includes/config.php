@@ -189,6 +189,23 @@ $chapters = [
             'chapter13_part2' => ['title' => 'الجزء الثاني: المواقع المالية الأخرى وأدوات الفحص', 'url' => get_chapter_url('chapter13_part2.php')],
             'chapter13_part3' => ['title' => 'الجزء الثالث: الرسوم البيانية والتحليل الفني ومنتديات النقاش', 'url' => get_chapter_url('chapter13_part3.php')]
         ]
+    ],
+    'chapter14' => [
+        'title' => 'الفصل الرابع عشر: دليل المواقع الاستثمارية',
+        'parts' => [
+            'chapter14_part1' => ['title' => 'الجزء الأول: خدمات الخرائط والتخطيط المالي وتقارير الشركات', 'url' => get_chapter_url('chapter14_part1.php')],
+            'chapter14_part2' => ['title' => 'الجزء الثاني: مواقع الأسواق المالية والاستثمار الإسلامي', 'url' => get_chapter_url('chapter14_part2.php')],
+            'chapter14_part3' => ['title' => 'الجزء الثالث: منتديات ومواقع متفرقة', 'url' => get_chapter_url('chapter14_part3.php')]
+        ]
+    ],
+    'chapter15' => [
+        'title' => 'الفصل الخامس عشر: صناديق الاستثمار وأسهم المؤشرات',
+        'parts' => [
+            'chapter15_part1' => ['title' => 'الجزء الأول: مقدمة صناديق الاستثمار ومزاياها وسلبياتها', 'url' => get_chapter_url('chapter15_part1.php')],
+            'chapter15_part2' => ['title' => 'الجزء الثاني: أداء الصناديق وصناديق المؤشرات', 'url' => get_chapter_url('chapter15_part2.php')],
+            'chapter15_part3' => ['title' => 'الجزء الثالث: الاستثمار الإسلامي والدولي', 'url' => get_chapter_url('chapter15_part3.php')],
+            'chapter15_part4' => ['title' => 'الجزء الرابع: الاستثمار في العقار والخلاصة', 'url' => get_chapter_url('chapter15_part4.php')]
+        ]
     ]
 ];
 
