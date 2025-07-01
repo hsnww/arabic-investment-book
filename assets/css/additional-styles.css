@@ -16,7 +16,9 @@ body {
     border-radius: 10px;
     padding: 2rem;
     margin: 2rem 0;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    direction: rtl;
+    text-align: right;
 }
 
 .chapter-header {
@@ -49,7 +51,8 @@ body {
     text-align: justify;
 }
 
-.chapter-text ul, .chapter-text ol {
+.chapter-text ul,
+.chapter-text ol {
     margin-bottom: 1rem;
     padding-right: 1.5rem;
 }
@@ -64,7 +67,7 @@ body {
     padding: 1.5rem;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-right: 5px solid #007bff;
 }
 
@@ -110,7 +113,7 @@ body {
     border-radius: 10px;
     padding: 1.5rem;
     margin-bottom: 2rem;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .chapter-progress {
@@ -118,7 +121,7 @@ body {
     border-radius: 10px;
     padding: 1rem;
     margin-bottom: 2rem;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .progress-bar {
@@ -174,7 +177,7 @@ body {
     border-radius: 10px;
     padding: 1.5rem;
     margin: 1rem 0;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .stats-grid {
@@ -208,7 +211,7 @@ body {
 
 /* Navigation Improvements */
 .navbar {
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand {
@@ -218,7 +221,7 @@ body {
 
 .dropdown-menu {
     border: none;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
@@ -232,7 +235,7 @@ body {
     background: white;
     border-radius: 10px;
     padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .breadcrumb-item a {
@@ -248,7 +251,7 @@ body {
 .alert {
     border: none;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Button Improvements */
@@ -260,7 +263,7 @@ body {
 
 .btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer Styles */
@@ -301,13 +304,13 @@ body {
 .card {
     border: none;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
 .card-header {
@@ -320,24 +323,24 @@ body {
     .stats-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .toc-section {
         padding: 1rem;
     }
-    
+
     .chapter-navigation {
         padding: 1rem;
     }
-    
+
     .chapter-content {
         padding: 1rem;
         margin: 1rem 0;
     }
-    
+
     .container {
         padding: 0 15px;
     }
-    
+
     .footer {
         padding: 1rem 0;
         margin-top: 2rem;
@@ -348,20 +351,20 @@ body {
     .chapter-text {
         font-size: 1rem;
     }
-    
+
     .display-4 {
         font-size: 2rem;
     }
-    
+
     .display-5 {
         font-size: 1.5rem;
     }
-    
+
     .footer {
         text-align: center;
     }
-    
+
     .footer .col-md-6 {
         margin-bottom: 1rem;
     }
-} 
+}

@@ -17,7 +17,9 @@ define('DEVELOPMENT_MODE', true); // Set to false in production
 
 // Site Information
 define('SITE_NAME', 'المال والاستثمار في الأسواق المالية');
-define('SITE_URL', 'https://zajwal.com'); // Change this for production
+define('SITE_URL', 'http://html-book.test'); // Change this for production
+//define('SITE_URL', 'https://zajwal.com'); // Change this for production
+
 define('SITE_DESCRIPTION', 'كتاب شامل عن الاستثمار في الأسواق المالية');
 define('SITE_AUTHOR', 'الدكتور فهد الحويماني');
 define('SITE_VERSION', '2.0.0');
@@ -82,7 +84,7 @@ function get_include_file_path($file) {
     return INCLUDES_PATH . '/' . ltrim($file, '/');
 }
 
-// Chapters Configuration
+// Chapters Configuration - CORRECTED VERSION
 $chapters = [
     'chapter1' => [
         'title' => 'الفصل الأول: الاستثمار في الأسهم',
@@ -162,6 +164,30 @@ $chapters = [
             'chapter10_part1' => ['title' => 'الجزء الأول: مؤشرات السيولة وإدارة الأصول', 'url' => get_chapter_url('chapter10_part1.php')],
             'chapter10_part2' => ['title' => 'الجزء الثاني: مؤشرات إدارة المديونية والربحية', 'url' => get_chapter_url('chapter10_part2.php')],
             'chapter10_part3' => ['title' => 'الجزء الثالث: مؤشرات القيمة السوقية والتدفق النقدي', 'url' => get_chapter_url('chapter10_part3.php')]
+        ]
+    ],
+    'chapter11' => [
+        'title' => 'الفصل الحادي عشر: متابعة المؤشرات المالية والاقتصادية',
+        'parts' => [
+            'chapter11_part1' => ['title' => 'الجزء الأول: المؤشرات الاقتصادية والمالية الأساسية', 'url' => get_chapter_url('chapter11_part1.php')],
+            'chapter11_part2' => ['title' => 'الجزء الثاني: دور البنك المركزي ومؤشرات السوق', 'url' => get_chapter_url('chapter11_part2.php')],
+            'chapter11_part3' => ['title' => 'الجزء الثالث: مؤشرات السوق وقطاع التكنولوجيا', 'url' => get_chapter_url('chapter11_part3.php')]
+        ]
+    ],
+    'chapter12' => [
+        'title' => 'الفصل الثاني عشر: التحليل الفني للأسهم',
+        'parts' => [
+            'chapter12_part1' => ['title' => 'الجزء الأول: مقدمة، نظرية داو، الرسوم البيانية والاتجاهات', 'url' => get_chapter_url('chapter12_part1.php')],
+            'chapter12_part2' => ['title' => 'الجزء الثاني: الدعم والمقاومة، الفجوات، الانعكاسات، فيبوناتشي', 'url' => get_chapter_url('chapter12_part2.php')],
+            'chapter12_part3' => ['title' => 'الجزء الثالث: النماذج السعرية والمؤشرات الفنية', 'url' => get_chapter_url('chapter12_part3.php')]
+        ]
+    ],
+    'chapter13' => [
+        'title' => 'الفصل الثالث عشر: الإنترنت والمستثمر',
+        'parts' => [
+            'chapter13_part1' => ['title' => 'الجزء الأول: مقدمة الإنترنت والمستثمر وموقع ياهو المالي', 'url' => get_chapter_url('chapter13_part1.php')],
+            'chapter13_part2' => ['title' => 'الجزء الثاني: المواقع المالية الأخرى وأدوات الفحص', 'url' => get_chapter_url('chapter13_part2.php')],
+            'chapter13_part3' => ['title' => 'الجزء الثالث: الرسوم البيانية والتحليل الفني ومنتديات النقاش', 'url' => get_chapter_url('chapter13_part3.php')]
         ]
     ]
 ];
@@ -349,11 +375,8 @@ function get_chapter_text_part($filename, $start_line, $end_line) {
     $selected = array_slice($lines, $start, $end - $start);
     $text = '';
     foreach ($selected as $line) {
-        $line = trim($line);
-        if ($line !== '') {
-            $text .= '<p>' . htmlspecialchars($line) . '</p>';
-        }
+        $text .= '<p>' . htmlspecialchars($line) . '</p>';
     }
     return $text;
 }
-?>
+?> 

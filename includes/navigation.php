@@ -57,10 +57,15 @@ if ($is_in_chapters) {
                     <ul class="dropdown-menu dropdown-menu-end">
                         <?php if (isset($chapters) && is_array($chapters)): ?>
                             <?php foreach ($chapters as $chapter_key => $chapter): ?>
-                                <li><h6 class="dropdown-header"><?php echo sanitize_output($chapter['title']); ?></h6></li>
-                                <?php foreach ($chapter['parts'] as $part_key => $part): ?>
-                                    <li><a class="dropdown-item" href="<?php echo $part['url']; ?>"><?php echo sanitize_output($part['title']); ?></a></li>
-                                <?php endforeach; ?>
+                                <?php 
+                                    // احصل على أول جزء من كل فصل
+                                    $first_part = reset($chapter['parts']);
+                                ?>
+                                <li>
+                                    <a class="dropdown-item" href="<?php echo $first_part['url']; ?>">
+                                        <?php echo sanitize_output($chapter['title']); ?>
+                                    </a>
+                                </li>
                                 <?php if ($chapter_key !== array_key_last($chapters)): ?>
                                     <li><hr class="dropdown-divider"></li>
                                 <?php endif; ?>
