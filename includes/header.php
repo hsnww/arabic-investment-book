@@ -48,12 +48,12 @@ if (!isset($page_url)) $page_url = BASE_URL;
     <script src="<?php echo get_js_url('analytics.js'); ?>"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid px-0">
         <div class="row">
             <div class="col-12">
-                <header class="bg-primary text-white text-center py-4">
-                    <h1 class="display-4"><?php echo SITE_NAME; ?></h1>
-                    <p class="lead"><?php echo SITE_AUTHOR; ?></p>
+                <header class="bg-primary text-white text-center py-3">
+                    <h1 class="display-4 mb-2" style="font-size: clamp(1.5rem, 4vw, 2.5rem); line-height: 1.2; word-wrap: break-word;"><?php echo SITE_NAME; ?></h1>
+                    <p class="lead mb-0" style="font-size: clamp(0.9rem, 2.5vw, 1.25rem);"><?php echo SITE_AUTHOR; ?></p>
                 </header>
             </div>
         </div>

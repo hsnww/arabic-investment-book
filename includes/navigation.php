@@ -54,7 +54,7 @@ if ($is_in_chapters) {
                     <a class="nav-link dropdown-toggle" href="#" id="chaptersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fas fa-list-ol"></i> الفصول
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-end">
+                    <ul class="dropdown-menu dropdown-menu-end" style="max-height: 70vh; overflow-y: auto;">
                         <?php if (isset($chapters) && is_array($chapters)): ?>
                             <?php foreach ($chapters as $chapter_key => $chapter): ?>
                                 <?php 
@@ -62,7 +62,7 @@ if ($is_in_chapters) {
                                     $first_part = reset($chapter['parts']);
                                 ?>
                                 <li>
-                                    <a class="dropdown-item" href="<?php echo $first_part['url']; ?>">
+                                    <a class="dropdown-item" href="<?php echo $first_part['url']; ?>" style="white-space: normal; word-wrap: break-word;">
                                         <?php echo sanitize_output($chapter['title']); ?>
                                     </a>
                                 </li>

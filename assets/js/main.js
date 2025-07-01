@@ -4,8 +4,8 @@
  */
 
 // Import dependencies
-import 'bootstrap';
 import '@fortawesome/fontawesome-free/css/all.css';
+import 'bootstrap';
 
 // Main application class
 class InvestmentBook {
@@ -24,17 +24,26 @@ class InvestmentBook {
         // Navigation toggle for mobile
         const navbarToggler = document.querySelector('.navbar-toggler');
         if (navbarToggler) {
-            navbarToggler.addEventListener('click', this.handleNavbarToggle.bind(this));
+            navbarToggler.addEventListener(
+                'click',
+                this.handleNavbarToggle.bind(this)
+            );
         }
 
+        // Dropdown menu fixes for mobile
+        this.setupDropdownFixes();
+
         // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', this.handleSmoothScroll.bind(this));
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener(
+                'click',
+                this.handleSmoothScroll.bind(this)
+            );
         });
 
         // Print button functionality
         const printButtons = document.querySelectorAll('.btn-print');
-        printButtons.forEach(button => {
+        printButtons.forEach((button) => {
             button.addEventListener('click', this.handlePrint.bind(this));
         });
 
@@ -44,19 +53,25 @@ class InvestmentBook {
 
     initializeComponents() {
         // Initialize Bootstrap tooltips
-        const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        const tooltipTriggerList = [].slice.call(
+            document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        );
         tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl);
         });
 
         // Initialize Bootstrap popovers
-        const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+        const popoverTriggerList = [].slice.call(
+            document.querySelectorAll('[data-bs-toggle="popover"]')
+        );
         popoverTriggerList.map(function (popoverTriggerEl) {
             return new bootstrap.Popover(popoverTriggerEl);
         });
 
         // Initialize Bootstrap collapse
-        const collapseElementList = [].slice.call(document.querySelectorAll('.collapse'));
+        const collapseElementList = [].slice.call(
+            document.querySelectorAll('.collapse')
+        );
         collapseElementList.map(function (collapseEl) {
             return new bootstrap.Collapse(collapseEl);
         });
@@ -64,7 +79,10 @@ class InvestmentBook {
 
     setupScrollEffects() {
         // Highlight current section in table of contents
-        window.addEventListener('scroll', this.handleScrollHighlight.bind(this));
+        window.addEventListener(
+            'scroll',
+            this.handleScrollHighlight.bind(this)
+        );
 
         // Back to top button
         this.setupBackToTop();
@@ -77,26 +95,29 @@ class InvestmentBook {
         if (tocLinks.length === 0 || sections.length === 0) return;
 
         // Create intersection observer for sections
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    this.updateActiveTocLink(entry.target.id);
-                }
-            });
-        }, {
-            threshold: 0.3,
-            rootMargin: '-20% 0px -20% 0px'
-        });
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        this.updateActiveTocLink(entry.target.id);
+                    }
+                });
+            },
+            {
+                threshold: 0.3,
+                rootMargin: '-20% 0px -20% 0px',
+            }
+        );
 
         // Observe all sections
-        sections.forEach(section => {
+        sections.forEach((section) => {
             observer.observe(section);
         });
     }
 
     updateActiveTocLink(activeId) {
         const tocLinks = document.querySelectorAll('.table-of-contents a');
-        tocLinks.forEach(link => {
+        tocLinks.forEach((link) => {
             link.classList.remove('active');
             if (link.getAttribute('href') === `#${activeId}`) {
                 link.classList.add('active');
@@ -111,15 +132,63 @@ class InvestmentBook {
         }
     }
 
+    setupDropdownFixes() {
+        // Fix dropdown menu issues on mobile
+        const dropdownToggle = document.querySelector('#chaptersDropdown');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+
+        if (dropdownToggle && dropdownMenu) {
+            dropdownToggle.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                // Toggle dropdown
+                const isOpen = dropdownMenu.classList.contains('show');
+
+                if (isOpen) {
+                    dropdownMenu.classList.remove('show');
+                    document.body.classList.remove('dropdown-open');
+                } else {
+                    dropdownMenu.classList.add('show');
+                    document.body.classList.add('dropdown-open');
+                }
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener('click', (e) => {
+                if (
+                    !dropdownToggle.contains(e.target) &&
+                    !dropdownMenu.contains(e.target)
+                ) {
+                    dropdownMenu.classList.remove('show');
+                    document.body.classList.remove('dropdown-open');
+                }
+            });
+
+            // Close dropdown when clicking on a dropdown item
+            dropdownMenu.addEventListener('click', (e) => {
+                if (e.target.classList.contains('dropdown-item')) {
+                    dropdownMenu.classList.remove('show');
+                    document.body.classList.remove('dropdown-open');
+                }
+            });
+
+            // Close dropdown on window resize
+            window.addEventListener('resize', () => {
+                dropdownMenu.classList.remove('show');
+                document.body.classList.remove('dropdown-open');
+            });
+        }
+    }
+
     handleSmoothScroll(event) {
         event.preventDefault();
         const targetId = this.getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
-        
+
         if (targetElement) {
             targetElement.scrollIntoView({
                 behavior: 'smooth',
-                block: 'start'
+                block: 'start',
             });
         }
     }
@@ -161,7 +230,7 @@ class InvestmentBook {
         backToTopButton.addEventListener('click', () => {
             window.scrollTo({
                 top: 0,
-                behavior: 'smooth'
+                behavior: 'smooth',
             });
         });
     }
@@ -219,13 +288,13 @@ const Utils = {
     // Throttle function for scroll events
     throttle(func, limit) {
         let inThrottle;
-        return function() {
+        return function () {
             const args = arguments;
             const context = this;
             if (!inThrottle) {
                 func.apply(context, args);
                 inThrottle = true;
-                setTimeout(() => inThrottle = false, limit);
+                setTimeout(() => (inThrottle = false), limit);
             }
         };
     },
@@ -246,10 +315,12 @@ const Utils = {
         return (
             rect.top >= 0 &&
             rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            rect.bottom <=
+                (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <=
+                (window.innerWidth || document.documentElement.clientWidth)
         );
-    }
+    },
 };
 
 // Initialize the application when DOM is loaded
@@ -258,4 +329,4 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Export for use in other modules
-export { InvestmentBook, Utils }; 
+export { InvestmentBook, Utils };
