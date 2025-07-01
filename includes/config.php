@@ -17,8 +17,8 @@ define('DEVELOPMENT_MODE', true); // Set to false in production
 
 // Site Information
 define('SITE_NAME', 'المال والاستثمار في الأسواق المالية');
-define('SITE_URL', 'http://html-book.test'); // Change this for production
-//define('SITE_URL', 'https://zajwal.com'); // Change this for production
+// define('SITE_URL', 'http://html-book.test'); // Change this for production
+define('SITE_URL', 'https://zajwal.com'); // Change this for production
 
 define('SITE_DESCRIPTION', 'كتاب شامل عن الاستثمار في الأسواق المالية');
 define('SITE_AUTHOR', 'الدكتور فهد الحويماني');
