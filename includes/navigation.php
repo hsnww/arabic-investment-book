@@ -23,7 +23,7 @@ if ($is_in_chapters) {
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand" href="<?php echo get_page_url('index.php'); ?>">
-            <i class="fas fa-book"></i> <?php echo SITE_NAME; ?>
+            <i class="fas fa-book"></i> المال والاستثمار
         </a>
         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">

@@ -381,8 +381,9 @@ header.bg-primary p {
 
     /* Fix navbar brand text overflow */
     .navbar-brand {
-        font-size: 1rem;
-        max-width: 200px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        max-width: 180px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -528,8 +529,8 @@ header.bg-primary p {
 
     /* Extra small screen fixes */
     .navbar-brand {
-        font-size: 0.9rem;
-        max-width: 150px;
+        font-size: 1rem;
+        max-width: 140px;
     }
 
     .dropdown-menu {
