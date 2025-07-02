@@ -47,6 +47,11 @@ if ($is_in_chapters) {
                         <i class="fas fa-file-text"></i> المقدمة 
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo get_page_url('pages/sitemap.php'); ?>">
+                        <i class="fas fa-sitemap"></i> خريطة الموقع
+                    </a>
+                </li>
             </ul>
             
             <ul class="navbar-nav">
