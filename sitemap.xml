@@ -3,35 +3,42 @@
     <!-- الصفحة الرئيسية -->
     <url>
         <loc>https://zajwal.com/</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
-    
     <!-- صفحة فهرس الكتاب -->
     <url>
         <loc>https://zajwal.com/pages/toc.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
-    
-    <!-- صفحات المقدمة -->
+    <!-- خريطة الموقع -->
+    <url>
+        <loc>https://zajwal.com/pages/sitemap.php</loc>
+        <lastmod>2025-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <!-- المقدمة الأولى -->
     <url>
         <loc>https://zajwal.com/pages/introduction.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+    <!-- المقدمة الثانية -->
     <url>
         <loc>https://zajwal.com/pages/introduction-2.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+    <!-- المقدمة الثالثة -->
     <url>
         <loc>https://zajwal.com/pages/introduction-3.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -39,25 +46,25 @@
     <!-- الفصل الأول: الاستثمار في الأسهم -->
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter1_part1.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter1_part2.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter1_part3.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter1_part4.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -65,7 +72,7 @@
     <!-- الفصل الثاني: التخطيط المالي -->
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter2.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -73,25 +80,25 @@
     <!-- الفصل الثالث: حساب الأداء الاستثماري -->
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter3_part1.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter3_part2.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter3_part3.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter3_part4.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -99,19 +106,19 @@
     <!-- الفصل الرابع: التحليل الأساسي -->
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter4_part1.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter4_part2.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter4_part3.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -119,19 +126,19 @@
     <!-- الفصل الخامس: السندات -->
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter5_part1.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter5_part2.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter5_part3.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -139,19 +146,19 @@
     <!-- الفصل السادس: العملات الأجنبية -->
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter6_part1.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter6_part2.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter6_part3.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -159,13 +166,13 @@
     <!-- الفصل السابع: الخلاصة والتوصيات -->
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter7_part1.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter7_part2.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -173,19 +180,19 @@
     <!-- الفصل الثامن: الجدوى من تحليل الأسهم -->
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter8_part1.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter8_part2.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter8_part3.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -193,25 +200,25 @@
     <!-- الفصل التاسع: التحليل الأساسي للأسهم -->
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter9_part1.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter9_part2.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter9_part3.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter9_part4.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -219,19 +226,19 @@
     <!-- الفصل العاشر: مؤشرات الأداء المالية -->
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter10_part1.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter10_part2.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter10_part3.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -239,19 +246,19 @@
     <!-- الفصل الحادي عشر: متابعة المؤشرات المالية والاقتصادية -->
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter11_part1.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter11_part2.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter11_part3.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -259,19 +266,19 @@
     <!-- الفصل الثاني عشر: التحليل الفني للأسهم -->
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter12_part1.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter12_part2.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter12_part3.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -279,19 +286,19 @@
     <!-- الفصل الثالث عشر: الإنترنت والمستثمر -->
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter13_part1.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter13_part2.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter13_part3.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -299,19 +306,19 @@
     <!-- الفصل الرابع عشر: دليل المواقع الاستثمارية -->
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter14_part1.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter14_part2.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter14_part3.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -319,25 +326,25 @@
     <!-- الفصل الخامس عشر: صناديق الاستثمار وأسهم المؤشرات -->
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter15_part1.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter15_part2.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter15_part3.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter15_part4.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -345,19 +352,19 @@
     <!-- الفصل السادس عشر: عقود الخيار -->
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter16_part1.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter16_part2.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter16_part3.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -365,19 +372,19 @@
     <!-- الفصل السابع عشر: السندات -->
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter17_part1.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter17_part2.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter17_part3.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -385,19 +392,19 @@
     <!-- الفصل الثامن عشر: الأسواق الآجلة -->
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter18_part1.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter18_part2.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter18_part3.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -405,20 +412,20 @@
     <!-- الفصل التاسع عشر: متفرقات -->
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter19_part1.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter19_part2.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://zajwal.com/pages/chapters/chapter19_part3.php</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-</urlset> 
+</urlset>

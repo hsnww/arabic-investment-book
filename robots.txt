@@ -1,0 +1,35 @@
+User-agent: *
+Allow: /
+
+# Allow access to all pages
+Allow: /pages/
+Allow: /pages/chapters/
+Allow: /assets/
+Allow: /images/
+
+# Disallow access to sensitive files
+Disallow: /includes/
+Disallow: /cache/
+Disallow: /logs/
+Disallow: /templates/
+Disallow: /text/
+Disallow: /pdf-book/
+Disallow: /docker/
+Disallow: /docs/
+Disallow: /env.example
+Disallow: /deploy.env.example
+Disallow: /deploy.sh
+Disallow: /digitalocean-deploy.sh
+Disallow: /Dockerfile
+Disallow: /docker-compose.yml
+Disallow: /Makefile
+Disallow: /package.json
+Disallow: /webpack.config.js
+Disallow: /composer.json
+Disallow: /add_chapter13_manual.php
+
+# Sitemap location
+Sitemap: https://zajwal.com/sitemap.xml
+
+# Crawl delay (optional - be respectful to server)
+Crawl-delay: 1 
