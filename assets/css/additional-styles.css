@@ -701,3 +701,68 @@ header.bg-primary p {
         text-align: right;
     }
 }
+
+/* Chapters Dropdown Menu Styles */
+.chapters-dropdown {
+    min-width: 350px !important;
+    max-width: 450px !important;
+    padding: 0.5rem 0;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.chapter-link {
+    padding: 0.75rem 1rem !important;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #333 !important;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #f0f0f0;
+    white-space: normal !important;
+    word-wrap: break-word;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.chapter-link:hover {
+    background-color: #f8f9fa !important;
+    color: #007bff !important;
+    transform: translateX(-3px);
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.15);
+}
+
+.chapter-link:last-child {
+    border-bottom: none;
+}
+
+/* Mobile Responsive for Chapters Dropdown */
+@media (max-width: 768px) {
+    .chapters-dropdown {
+        min-width: 280px !important;
+        max-width: 320px !important;
+        max-height: 60vh !important;
+    }
+
+    .chapter-link {
+        padding: 0.6rem 0.8rem !important;
+        font-size: 0.9rem;
+        min-height: 45px;
+    }
+}
+
+@media (max-width: 576px) {
+    .chapters-dropdown {
+        min-width: 250px !important;
+        max-width: 280px !important;
+        max-height: 50vh !important;
+    }
+
+    .chapter-link {
+        padding: 0.5rem 0.7rem !important;
+        font-size: 0.85rem;
+        min-height: 40px;
+    }
+}

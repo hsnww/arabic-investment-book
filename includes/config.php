@@ -206,6 +206,38 @@ $chapters = [
             'chapter15_part3' => ['title' => 'الجزء الثالث: الاستثمار الإسلامي والدولي', 'url' => get_chapter_url('chapter15_part3.php')],
             'chapter15_part4' => ['title' => 'الجزء الرابع: الاستثمار في العقار والخلاصة', 'url' => get_chapter_url('chapter15_part4.php')]
         ]
+    ],
+    'chapter16' => [
+        'title' => 'الفصل السادس عشر: عقود الخيار',
+        'parts' => [
+            'chapter16_part1' => ['title' => 'الجزء الأول: مقدمة عقود الخيار وأنواعها', 'url' => get_chapter_url('chapter16_part1.php')],
+            'chapter16_part2' => ['title' => 'الجزء الثاني: خصائص عقود الخيار وأنواعها', 'url' => get_chapter_url('chapter16_part2.php')],
+            'chapter16_part3' => ['title' => 'الجزء الثالث: استراتيجيات عقود الخيار والمواقع الإلكترونية', 'url' => get_chapter_url('chapter16_part3.php')]
+        ]
+    ],
+    'chapter17' => [
+        'title' => 'الفصل السابع عشر: السندات',
+        'parts' => [
+            'chapter17_part1' => ['title' => 'الجزء الأول: أساسيات السندات وخصائصها', 'url' => get_chapter_url('chapter17_part1.php')],
+            'chapter17_part2' => ['title' => 'الجزء الثاني: أنواع السندات وحساب العائد', 'url' => get_chapter_url('chapter17_part2.php')],
+            'chapter17_part3' => ['title' => 'الجزء الثالث: منحنى العائد والاستراتيجيات', 'url' => get_chapter_url('chapter17_part3.php')]
+        ]
+    ],
+    'chapter18' => [
+        'title' => 'الفصل الثامن عشر: الأسواق الآجلة',
+        'parts' => [
+            'chapter18_part1' => ['title' => 'الجزء الأول: مقدمة الأسواق الآجلة وأنواع العقود', 'url' => get_chapter_url('chapter18_part1.php')],
+            'chapter18_part2' => ['title' => 'الجزء الثاني: آلية العمل، الضمان، التحوط والمضاربة', 'url' => get_chapter_url('chapter18_part2.php')],
+            'chapter18_part3' => ['title' => 'الجزء الثالث: العملات الدولية والعوامل المؤثرة والخلاصة', 'url' => get_chapter_url('chapter18_part3.php')]
+        ]
+    ],
+    'chapter19' => [
+        'title' => 'الفصل التاسع عشر: متفرقات',
+        'parts' => [
+            'chapter19_part1' => ['title' => 'الجزء الأول: قضايا جماعات المتضررين والإفلاس والاحتيال', 'url' => get_chapter_url('chapter19_part1.php')],
+            'chapter19_part2' => ['title' => 'الجزء الثاني: انهيارات الأسواق وسقوط الشركات', 'url' => get_chapter_url('chapter19_part2.php')],
+            'chapter19_part3' => ['title' => 'الجزء الثالث: الفقاعات المالية والإحصائيات', 'url' => get_chapter_url('chapter19_part3.php')]
+        ]
     ]
 ];
 
