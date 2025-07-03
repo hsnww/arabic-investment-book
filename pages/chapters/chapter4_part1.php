@@ -12,7 +12,7 @@ $chapter_title = 'الفصل الرابع: التحليل الأساسي - ال�
 $current_page = 'chapter4_part1';
 
 // Navigation links
-$prev_chapter = get_chapter_url('chapter3_part4.php');
+$prev_chapter = get_chapter_url('chapter3_part2.php');
 $next_chapter = get_chapter_url('chapter4_part2.php');
 
 // Table of contents

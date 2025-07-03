@@ -105,9 +105,7 @@ $chapters = [
         'title' => 'الفصل الثالث: حساب الأداء الاستثماري',
         'parts' => [
             'chapter3_part1' => ['title' => 'الجزء الأول: القيمة الزمنية للمال', 'url' => get_chapter_url('chapter3_part1.php')],
-            'chapter3_part2' => ['title' => 'الجزء الثاني: معادلات العائد', 'url' => get_chapter_url('chapter3_part2.php')],
-            'chapter3_part3' => ['title' => 'الجزء الثالث: قياس الأداء', 'url' => get_chapter_url('chapter3_part3.php')],
-            'chapter3_part4' => ['title' => 'الجزء الرابع: العائد المعقول', 'url' => get_chapter_url('chapter3_part4.php')]
+            'chapter3_part2' => ['title' => 'الجزء الثاني: معادلات العائد وقياس الأداء', 'url' => get_chapter_url('chapter3_part2.php')]
         ]
     ],
     'chapter4' => [

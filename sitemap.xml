@@ -90,18 +90,6 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-    <url>
-        <loc>https://zajwal.com/pages/chapters/chapter3_part3.php</loc>
-        <lastmod>2025-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://zajwal.com/pages/chapters/chapter3_part4.php</loc>
-        <lastmod>2025-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
     
     <!-- الفصل الرابع: التحليل الأساسي -->
     <url>
