@@ -192,7 +192,7 @@ include '../../includes/navigation.php';
 
                     <div class="alert alert-primary">
                         <i class="fas fa-book me-2"></i>
-                        <strong>نهاية الكتاب:</strong> بهذا الفصل نكون قد انتهينا من جميع فصول الكتاب، ونأمل أن يكون هذا العمل قد ساهم في تعزيز فهم القارئ للأسواق المالية وأدوات الاستثمار المختلفة.
+                        <strong>نهاية الفصل:</strong> بهذا الفصل نكون قد انتهينا من الفصول الأساسية للكتاب، ونأمل أن يكون هذا العمل قد ساهم في تعزيز فهم القارئ للأسواق المالية وأدوات الاستثمار المختلفة. يتبعه فصل خاص بالأسهم السعودية.
                     </div>
                 </div>
             </div>
@@ -203,10 +203,16 @@ include '../../includes/navigation.php';
                     <i class="fas fa-arrow-right me-2"></i>
                     الجزء الثاني
                 </a>
-                <a href="../toc.php" class="btn btn-primary">
-                    <i class="fas fa-list me-2"></i>
-                    جدول المحتويات
-                </a>
+                <div>
+                    <a href="../toc.php" class="btn btn-primary me-2">
+                        <i class="fas fa-list me-2"></i>
+                        جدول المحتويات
+                    </a>
+                    <a href="chapter20_part1.php" class="btn btn-success">
+                        <i class="fas fa-arrow-left me-2"></i>
+                        الفصل العشرون: الأسهم السعودية
+                    </a>
+                </div>
             </div>
         </div>
     </div>

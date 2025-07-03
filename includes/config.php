@@ -236,6 +236,19 @@ $chapters = [
             'chapter19_part2' => ['title' => 'الجزء الثاني: انهيارات الأسواق وسقوط الشركات', 'url' => get_chapter_url('chapter19_part2.php')],
             'chapter19_part3' => ['title' => 'الجزء الثالث: الفقاعات المالية والإحصائيات', 'url' => get_chapter_url('chapter19_part3.php')]
         ]
+    ],
+    'chapter20' => [
+        'title' => 'الباب السادس: الأسهم السعودية',
+        'parts' => [
+            'chapter20_part1' => ['title' => 'الجزء الأول: مقدمة الأسهم السعودية', 'url' => get_chapter_url('chapter20_part1.php')],
+            'chapter20_part2' => ['title' => 'الجزء الثاني: الاقتصاد السعودي وأداء السوق', 'url' => get_chapter_url('chapter20_part2.php')],
+            'chapter20_part3' => ['title' => 'الجزء الثالث: أسباب صعود السوق السعودي', 'url' => get_chapter_url('chapter20_part3.php')],
+            'chapter20_part4' => ['title' => 'الجزء الرابع: التحليل الفني للسوق السعودي', 'url' => get_chapter_url('chapter20_part4.php')],
+            'chapter20_part5' => ['title' => 'الجزء الخامس: التحليل الأساسي للأسهم السعودية', 'url' => get_chapter_url('chapter20_part5.php')],
+            'chapter20_part6' => ['title' => 'الجزء السادس: الاكتتاب ورفع رأس المال', 'url' => get_chapter_url('chapter20_part6.php')],
+            'chapter20_part7' => ['title' => 'الجزء السابع: الصناديق الاستثمارية', 'url' => get_chapter_url('chapter20_part7.php')],
+            'chapter20_part8' => ['title' => 'الجزء الثامن: التوصيات والمستقبل', 'url' => get_chapter_url('chapter20_part8.php')]
+        ]
     ]
 ];
 

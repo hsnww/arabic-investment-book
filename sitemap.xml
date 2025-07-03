@@ -416,4 +416,54 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+
+    <!-- الباب السادس: الأسهم السعودية -->
+    <url>
+        <loc>https://zajwal.com/pages/chapters/chapter20_part1.php</loc>
+        <lastmod>2025-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://zajwal.com/pages/chapters/chapter20_part2.php</loc>
+        <lastmod>2025-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://zajwal.com/pages/chapters/chapter20_part3.php</loc>
+        <lastmod>2025-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://zajwal.com/pages/chapters/chapter20_part4.php</loc>
+        <lastmod>2025-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://zajwal.com/pages/chapters/chapter20_part5.php</loc>
+        <lastmod>2025-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://zajwal.com/pages/chapters/chapter20_part6.php</loc>
+        <lastmod>2025-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://zajwal.com/pages/chapters/chapter20_part7.php</loc>
+        <lastmod>2025-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://zajwal.com/pages/chapters/chapter20_part8.php</loc>
+        <lastmod>2025-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
